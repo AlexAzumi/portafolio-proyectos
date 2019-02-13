@@ -1,0 +1,174 @@
+// Fuentes responsivas
+@import '../../node_modules/rfs/scss';
+// Requerido
+@import '../../node_modules/bootstrap/scss/functions';
+@import '../../node_modules/bootstrap/scss/variables';
+@import '../../node_modules/bootstrap/scss/mixins';
+// Fuentes
+@import url('https://fonts.googleapis.com/css?family=Asap|Assistant|Noto+Sans+TC|Ubuntu');
+
+// Spacers
+$spacers: (
+    search: ($spacer * 6)
+);
+
+// Colores
+$primary: #00796B;
+$info: #03A9F4;
+
+// Tema
+$theme-colors: (
+    "primary": $primary,
+    "info": $info
+);
+
+// Cuerpo (body)
+body {
+    background-image: url('assets/background.png');
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+// Barra (navbar)
+.main-navbar {
+    min-height: 4rem;
+}
+
+.navbar-brand {
+    font-family: 'Noto Sans TC', Arial;
+}
+
+// Contenedores
+.main-container {
+    background-color: $gray-200;
+}
+
+// Navbar
+.nav-link {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.nav-link.active {
+    font-weight: bold;
+}
+
+// Lista de proyectos (barra lateral)
+.item-arrow {
+    right: 0.5rem;
+    top: 1.5rem;
+    transition: 100ms;
+}
+
+.item-list:hover > .item-arrow {
+    right: 0.1em;
+}
+
+.item-list {
+    transition: 100ms;
+}
+
+.item-list:hover {
+    background-color: $primary;
+    color: $white;
+    cursor: pointer;
+}
+
+.bd-sidebar {
+    background-color: $gray-200;
+    height: calc(100vh - 4rem);
+    position: -webkit-sticky;
+    position: sticky !important;
+    top: 0;
+    z-index: 1000;
+}
+
+.box-title {
+    font-family: 'Asap', sans-serif;
+}
+
+// Cartas de projectos
+.card-item {
+    cursor: pointer;
+}
+
+.card-date {
+    color: $info;
+    font-family: 'Asap', sans-serif;
+    right: 0.5rem;
+    top: 0.2rem;
+}
+
+.card-background {
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    transition: 200ms;
+}
+
+.card-item:hover > .card-background {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+}
+
+.card-title {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.card-text {
+    @include rfs(15);
+    font-family: 'Assistant', sans-serif;
+}
+
+// Tooltip
+.tooltip-inner {
+    text-align: initial !important;
+}
+
+.tooltip-inner ul {
+    padding-left: 20px;
+}
+
+// Títulos
+.title {
+    @include rfs(40);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+// Cuadro de búsqueda
+.search-btn {
+    right: 0;
+    z-index: 1000;
+}
+
+// Animaciones
+.fade-in-top {
+	-webkit-animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) 250ms both;
+	        animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) 250ms both;
+}
+
+@-webkit-keyframes fade-in-top {
+    0% {
+      -webkit-transform: translateY(-20px);
+              transform: translateY(-20px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes fade-in-top {
+    0% {
+      -webkit-transform: translateY(-20px);
+              transform: translateY(-20px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+      opacity: 1;
+    }
+}
+
+// Bootstrap
+@import '../../node_modules/bootstrap/scss/bootstrap';

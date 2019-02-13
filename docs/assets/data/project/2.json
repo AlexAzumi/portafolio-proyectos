@@ -1,0 +1,17 @@
+{
+    "id": "2",
+    "title": "Brightness Control",
+    "description": "Sin descripción",
+    "date": "Diciembre de 2017",
+    "technologies": [
+        "Java (App Móvil)",
+        "C (Arduino)",
+        "PHP",
+        "Base de datos MySQL"
+    ],
+    "imagesURL": [
+
+    ],
+    "repository": null,
+    "link": null
+}

@@ -2,7 +2,7 @@
   <div class="container">
     <a
       class="navbar-brand "
-      routerLink="home">
+      routerLink="">
       <img src="assets/logo.png" alt="Azumi's vault">
       <p class="d-inline-block my-auto ml-2">| Azumi's vault</p>
     </a>
@@ -21,8 +21,9 @@
         <li class="nav-item">
           <a
             class="nav-link"
-            routerLink="home"
+            routerLink=""
             routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact: true}"
             (click)="collapseNavbar()">
             Inicio
           </a>

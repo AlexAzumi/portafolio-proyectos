@@ -14,7 +14,7 @@ $spacers: (
 
 // Colores
 $primary: #00796B;
-$info: #03A9F4;
+$info: #7C4DFF;
 
 // Tema
 $theme-colors: (
@@ -133,10 +133,21 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
-// Cuadro de búsqueda
-.search-btn {
-    right: 0;
-    z-index: 1000;
+.title-lg {
+    @include rfs(52);
+}
+
+.title-sm {
+    @include rfs(30);
+}
+
+// Información de proyectos
+.project-date {
+    @include rfs(22);
+}
+
+.web-link {
+    @include rfs(30, true);
 }
 
 // Animaciones

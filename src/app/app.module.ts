@@ -16,6 +16,8 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ProjectInfoComponent } from './project-info/project-info.component';
+// Pipes
+import { ReversePipe } from './pipes/reverse.pipe';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import { ProjectInfoComponent } from './project-info/project-info.component';
     HomeComponent,
     AboutComponent,
     PageNotFoundComponent,
-    ProjectInfoComponent
+    ProjectInfoComponent,
+    ReversePipe
   ],
   imports: [
     BrowserModule,

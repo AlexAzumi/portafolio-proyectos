@@ -14,7 +14,7 @@ import { ProjectInfo } from '../models/project-info.model';
 })
 export class ProjectInfoComponent implements OnInit {
   public id: Number;
-  private project: ProjectInfo;
+  public project: ProjectInfo;
   constructor(
     private route: ActivatedRoute,
     private projectInfoService: ProjectInfoService,

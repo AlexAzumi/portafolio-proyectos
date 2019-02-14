@@ -12,6 +12,15 @@
         "Javascript",
         "Base de datos MySQL"
     ],
-    "repository": null,
-    "link": null
+    "imagesURL": [
+        "assets/images/medal-of-darkness/medal-of-darkness-1.jpg",
+        "assets/images/medal-of-darkness/medal-of-darkness-2.jpg",
+        "assets/images/medal-of-darkness/medal-of-darkness-3.jpg",
+        "assets/images/medal-of-darkness/medal-of-darkness-4.jpg",
+        "assets/images/medal-of-darkness/medal-of-darkness-5.jpg",
+        "assets/images/medal-of-darkness/medal-of-darkness-6.jpg",
+        "assets/images/medal-of-darkness/medal-of-darkness-7.jpg"
+    ],
+    "repository": "https://github.com/AldanProject/medal-of-darkness",
+    "web": "https://aldanproject.000webhostapp.com/"
 }

@@ -5,7 +5,7 @@
     *ngIf="projects != null">
     <div
       class="py-4 pl-2 pr-4 item-list border-bottom text-truncate position-relative"
-      *ngFor="let project of projects"
+      *ngFor="let project of projects | reverse"
       [routerLink]="['/project', project.id]"
       [ngbTooltip]="boxInfo"
       placement="right">
@@ -34,8 +34,8 @@
     <!-- Cartas -->
     <div
       class="card my-2 position-relative card-item bg-dark text-white"
-      *ngFor="let project of projects"
-      [id]="project.id"
+      *ngFor="let project of projects | reverse"
+      id="project-{{ project.id }}"
       [routerLink]="['/project', project.id]">
       <img src="assets/card-background/{{ project.id }}.jpg" class="card-img card-background" alt="{{ project.title }}">
       <div class="card-img-overlay">

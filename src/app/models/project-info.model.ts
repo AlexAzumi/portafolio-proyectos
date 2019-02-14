@@ -6,5 +6,5 @@ export class ProjectInfo {
     technologies: Array<String>;
     imagesURL: Array<String>;
     repository: String;
-    link: String;
+    web: String;
 }

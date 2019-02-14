@@ -10,8 +10,12 @@
         "Base de datos MySQL"
     ],
     "imagesURL": [
-
+        "assets/images/brightness-control/brightness-contro-1.jpg",
+        "assets/images/brightness-control/brightness-contro-2.jpg",
+        "assets/images/brightness-control/brightness-contro-3.jpg",
+        "assets/images/brightness-control/brightness-contro-4.jpg",
+        "assets/images/brightness-control/brightness-contro-5.jpg"
     ],
     "repository": null,
-    "link": null
+    "web": "https://proyectosinformaticatnl.ceti.mx/brightness-control-k/"
 }

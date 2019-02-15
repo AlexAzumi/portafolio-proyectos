@@ -2,6 +2,7 @@
     "id": "1",
     "title": "PComplement",
     "description": "Sin descripción",
+    "type": "Aplicación de escritorio (Windows)",
     "date": "Junio de 2017",
     "technologies": [
         "C#",

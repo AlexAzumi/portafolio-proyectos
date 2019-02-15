@@ -2,6 +2,7 @@
     "id": "3",
     "title": "Medal of Darkness",
     "description": "Sin descripción",
+    "type": "Videojuego y página web (frontend & backend)",
     "date": "Mayo de 2018",
     "technologies": [
         "Unity",

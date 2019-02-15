@@ -2,6 +2,7 @@
     "id": "2",
     "title": "Brightness Control",
     "description": "Sin descripción",
+    "type": "Página web (backend) y sistema de control por Arduino",
     "date": "Diciembre de 2017",
     "technologies": [
         "Java (App Móvil)",

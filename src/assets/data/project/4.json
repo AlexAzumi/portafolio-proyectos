@@ -2,6 +2,7 @@
     "id": "4",
     "title": "Misioneros del amor y la pureza",
     "description": "Sin descripción",
+    "type": "Página web (frontend)",
     "date": "Enero de 2019",
     "technologies": [
         "Angular 2+",

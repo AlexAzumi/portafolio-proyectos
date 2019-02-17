@@ -35,7 +35,7 @@
       *ngFor="let project of projects | reverse async"
       id="project-{{ project.id }}"
       [routerLink]="['/project-info', project.id]">
-      <img src="assets/card-background/{{ project.id }}.jpg" class="card-img card-background" alt="{{ project.title }}">
+      <img src="assets/images/card-background/{{ project.id }}.jpg" class="card-img card-background" alt="{{ project.title }}">
       <div class="card-img-overlay">
         <h5 class="card-title text-truncate pt-2 pt-md-0 pb-2 mb-2 border-bottom">{{ project.title }}</h5>
         <p class="position-absolute card-date font-weight-bold">{{ project.date }}</p>

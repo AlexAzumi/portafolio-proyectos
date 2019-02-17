@@ -20,8 +20,10 @@ npm install
 ```
 Después de haber descargado todas las dependencias, puede ejecutar el proyecto en modo local con:
 ```
-ng serve
+ng serve --open
 ```
+> El argumento *--open* es para que automáticamente se abra la página en el navegador, de igual manera puede acceder en la dirección *http://localhost:4200/*
+
 Puede compilar los estilos personalizados de Bootstrap 4 con:
 ```
 npm run sass

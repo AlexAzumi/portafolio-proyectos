@@ -2,7 +2,8 @@
     {
         "id": "1",
         "title": "PComplement",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque in gravida nisl. Curabitur tempus eros in ligula dapibus, vel sagittis nulla venenatis. Curabitur pulvinar nulla nibh, in porttitor ligula iaculis vel. Mauris tortor dui, faucibus vitae fringilla nec, faucibus eu justo. In et imperdiet ligula, sed accumsan lacus. Etiam condimentum venenatis justo quis accumsan. Sed at enim nisl. Donec vestibulum odio velit, eu bibendum dolor sagittis id. Maecenas efficitur risus velit, eleifend convallis ex eleifend vel. Maecenas ante erat, mollis ac nisl a, placerat blandit lacus. Suspendisse lobortis euismod felis ac congue.",
+        "description": "Aplicación de escritorio dedicada a la gestión de ventas de un negocio de venta de componentes de computadora",
+        "type": "Aplicación de escritorio (Windows)",
         "date": "Junio de 2017",
         "technologies": [
             "C#",
@@ -13,7 +14,8 @@
     {
         "id": "2",
         "title": "Brightness Control",
-        "description": "Sin descripción",
+        "description": "Monitorización de aplicación Arduino, el cual puede cambiar parámetros en tiempo real",
+        "type": "Página web (backend) y sistema de control por Arduino",
         "date": "Diciembre de 2017",
         "technologies": [
             "Java (App Móvil)",
@@ -25,8 +27,9 @@
     {
         "id": "3",
         "title": "Medal of Darkness",
-        "description": "Sin descripción",
-        "date": "Mayo de 2019",
+        "description": "Videojuego para la ayuda de la compresión lectora y razonamiento lógico del jugador",
+        "type": "Videojuego y página web (frontend & backend)",
+        "date": "Mayo de 2018",
         "technologies": [
             "Unity",
             "C#",
@@ -40,7 +43,8 @@
     {
         "id": "4",
         "title": "Misioneros del amor y la pureza",
-        "description": "Sin descripción",
+        "description": "Página web dedicada al grupo ÁGAPE",
+        "type": "Página web (frontend)",
         "date": "Enero de 2019",
         "technologies": [
             "Angular 2+",

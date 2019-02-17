@@ -30,7 +30,7 @@ export class ProjectInfoComponent implements OnInit {
         // Cambiar título
         if(this.project != null)
         {
-          console.log(this.project);
+          //console.log(this.project);
           this.titleSerive.setTitle(this.project.title + " - Portafolio de Alejando Suárez")
         }
         else

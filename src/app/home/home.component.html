@@ -1,12 +1,11 @@
-<div class="row">
+<div class="row" *ngIf="projects else noData">
   <!-- Lista de proyectos -->
   <div
-    class="col-md-3 px-0 d-none d-lg-block border-right bd-sidebar"
-    *ngIf="projects != null">
+    class="col-md-3 px-0 d-none d-lg-block border-right bd-sidebar">
     <div
       class="py-4 pl-2 pr-4 item-list border-bottom text-truncate position-relative"
       *ngFor="let project of projects | reverse async"
-      [routerLink]="['/project', project.id]"
+      [routerLink]="['/project-info', project.id]"
       [ngbTooltip]="boxInfo"
       placement="right">
       <p class="h4 font-weight-normal mb-0 d-inline-block align-middle box-title">
@@ -26,8 +25,7 @@
   </div>
   <!-- Cartas de proyectos -->
   <div
-    class="col-lg-9 fade-in-top"
-    *ngIf="projects != null">
+    class="col-lg-9 fade-in-top">
     <!-- Título -->
     <p class="title text-center mt-2">Proyectos <span class="text-muted d-block d-md-inline">por Alejandro Suárez</span></p>
     <hr>
@@ -36,7 +34,7 @@
       class="card my-2 position-relative card-item bg-dark text-white"
       *ngFor="let project of projects | reverse async"
       id="project-{{ project.id }}"
-      [routerLink]="['/project', project.id]">
+      [routerLink]="['/project-info', project.id]">
       <img src="assets/card-background/{{ project.id }}.jpg" class="card-img card-background" alt="{{ project.title }}">
       <div class="card-img-overlay">
         <h5 class="card-title text-truncate pt-2 pt-md-0 pb-2 mb-2 border-bottom">{{ project.title }}</h5>

@@ -1,5 +1,5 @@
 // Dependencias
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit} from '@angular/core';
 import { Title } from '@angular/platform-browser';
 // Servicios
 import { ProjectsService } from '../services/projects.service';
@@ -16,6 +16,8 @@ export class HomeComponent implements OnInit {
   private readonly TITLE = 'Proyectos - Portafolio de Alejandro Suárez';
   // Datos
   public projects: Project[];
+  // Subscriptions
+  private subscriptions = [];
   constructor(private titleService: Title, private projectsService: ProjectsService) { }
 
   ngOnInit() {

@@ -1,7 +1,7 @@
 {
     "id": "4",
     "title": "Misioneros del amor y la pureza",
-    "description": "Página web dedicada a la promoción del grupo religioso ÁGAPE, el cual muestra un vídeo en directo o el último que se haya realizado, aparte de enlistar todos los vídeos de su canal de YouTube, mostrar una galería de imágenes y un grupo de homílias semanales y mensuales. Sólo soy responzable del frontend.",
+    "description": "Página web dedicada a la promoción del grupo religioso ÁGAPE, el cual muestra un vídeo en directo o el último que se haya realizado, aparte de enlistar todos los vídeos de su canal de YouTube, mostrar una galería de imágenes y un grupo de homílias semanales y mensuales. Sólo soy responzable del frontend. <br><b>Nota: </b>La página aún no se enceuntra disponible",
     "type": "Página web (frontend)",
     "date": "Enero de 2019",
     "technologies": [
@@ -10,7 +10,11 @@
         "SASS"
     ],
     "imagesURL": [
-        "assets/images/no-preview.jpg"
+        "assets/images/agape/agape-1.jpg",
+        "assets/images/agape/agape-2.jpg",
+        "assets/images/agape/agape-3.jpg",
+        "assets/images/agape/agape-4.jpg",
+        "assets/images/agape/agape-5.jpg"
     ],
     "repository": null,
     "web": "http://misionerosdelamorylapureza.com/"

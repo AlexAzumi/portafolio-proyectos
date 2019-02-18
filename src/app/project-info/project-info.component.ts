@@ -13,6 +13,7 @@ import { ProjectInfo } from '../models/project-info.model';
   styleUrls: ['./project-info.component.css']
 })
 export class ProjectInfoComponent implements OnInit {
+  // Datos
   public id: Number;
   public project: ProjectInfo;
   constructor(
@@ -28,13 +29,10 @@ export class ProjectInfoComponent implements OnInit {
       info => {
         this.project = info;
         // Cambiar título
-        if(this.project != null)
-        {
-          //console.log(this.project);
-          this.titleSerive.setTitle(this.project.title + " - Portafolio de Alejando Suárez")
-        }
-        else
-        {
+        if (this.project != null) {
+          // console.log(this.project);
+          this.titleSerive.setTitle(this.project.title + ' - Portafolio de Alejando Suárez');
+        } else {
           console.log('Archivo no encontrado');
         }
       }

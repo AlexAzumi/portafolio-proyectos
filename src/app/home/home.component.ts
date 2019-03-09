@@ -98,8 +98,8 @@ export class HomeComponent implements OnInit {
     this.projectsService.getProjects().subscribe(
       projects => {
         this.projects = projects;
-        console.log('Proyectos obtenidos');
-        console.table(projects);
+        // console.log('Proyectos obtenidos');
+        // console.table(projects);
       },
       error => {
         console.log('Error: ' + error.message);

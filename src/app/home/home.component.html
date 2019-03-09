@@ -1,47 +1,19 @@
-<div class="row" *ngIf="projects">
-  <!-- Lista de proyectos -->
-  <div
-    class="col-md-3 px-0 d-none d-lg-block border-right bd-sidebar">
-    <div
-      class="py-4 pl-2 pr-4 item-list border-bottom text-truncate position-relative"
-      *ngFor="let project of projects | reverse async"
-      [routerLink]="['/project-info', project.id]"
-      [ngbTooltip]="boxInfo"
-      placement="right">
-      <p class="h4 font-weight-normal mb-0 d-inline-block align-middle box-title">
-        {{ project.title }}
-      </p>
-      <p class="h4 mb-0 position-absolute item-arrow">
-        <i class="fas fa-angle-right"></i>
-      </p>
-      <!-- Tooltip -->
-      <ng-template #boxInfo>
-        <p class="h5">{{ project.title }}</p>
-        <ul>
-          <li *ngFor="let tech of project.technologies">{{ tech }}</li>
-        </ul>
-      </ng-template>
-    </div>
-  </div>
-  <!-- Cartas de proyectos -->
-  <div
-    class="col-lg-9 fade-in-top">
-    <!-- Título -->
-    <p class="title text-center mt-2">Proyectos <span class="text-muted d-block d-md-inline">por Alejandro Suárez</span></p>
-    <hr>
-    <!-- Cartas -->
-    <div
-      class="card my-2 position-relative card-item bg-dark text-white"
-      *ngFor="let project of projects | reverse async"
-      id="project-{{ project.id }}"
-      [routerLink]="['/project-info', project.id]">
-      <img src="assets/images/card-background/{{ project.id }}.jpg" class="card-img card-background" alt="{{ project.title }}">
-      <div class="card-img-overlay">
-        <h5 class="card-title text-truncate pt-2 pt-md-0 pb-2 mb-2 border-bottom">{{ project.title }}</h5>
-        <p class="position-absolute card-date px-1 rounded">{{ project.date }}</p>
-        <p class="text-truncate d-none d-md-block border-bottom pb-2">{{ project.type }}</p>
-        <p class="card-text text-justify d-none d-md-block">{{ project.description }}</p>
-      </div>
+<particles [params]="myParams" [style]="myStyle" [width]="width" [height]="height"></particles>
+<p class="title text-center mb-0 pt-1 pb-3 pt-md-2 pb-md-4 text-light">Proyectos por <span class="text-info">Alejandro Suárez</span></p>
+<div class="row fade-in-top bg-light py-3" *ngIf="projects else noProjects">
+  <div class="col-md-6 my-2" *ngFor="let project of projects">
+    <div class="proyect-card border border-primary rounded bg-primary shadow-sm">
+      <a class="text-decoration-none" routerLink="project-info/{{ project.id }}">
+        <img
+          class="img-fluid rounded-top"
+          src="assets/images/card-image/{{ project.id }}.jpg">
+        <p class="h2 text-center text-light pt-2 pt-md-1">{{ project.title }}</p>
+        <hr>
+        <p class="px-2 text-light">{{ project.description }}</p>
+      </a>
     </div>
   </div>
 </div>
+<ng-template #noProjects>
+  <p class="display-4 text-center text-light">No se han encontrado proyectos</p>
+</ng-template>

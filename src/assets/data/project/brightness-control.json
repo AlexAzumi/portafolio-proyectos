@@ -1,5 +1,5 @@
 {
-    "id": "2",
+    "id": "brightness-control",
     "title": "Brightness Control",
     "description": "Página web con conexión a base de datos MySQL, capáz de mostrar datos almacenados directamente de un sensor de luz controlado por Arduino y un módulo Ethernet. La función del arduino es controlar automáticamente las persianas de una aula de CETI Tonalá para aprovechar la mejor cantidad de luz natural. Este también se tiene la opción de abrir y cerrar de manera manual.",
     "type": "Página web (backend) y sistema de control por Arduino",

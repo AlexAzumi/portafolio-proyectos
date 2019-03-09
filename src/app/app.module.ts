@@ -4,11 +4,11 @@ import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ParticlesModule } from 'angular-particle';
 // Router
 import { AppRoutingModule } from './app-routing.module';
 // Servicios
 import { ProjectsService } from './services/projects.service';
-import { ProjectInfoService } from './services/project-info.service';
 // Componentes
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './GLOBAL/navbar/navbar.component';
@@ -18,6 +18,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { ProjectInfoComponent } from './project-info/project-info.component';
 // Pipes
 import { ReversePipe } from './pipes/reverse.pipe';
+import { FooterComponent } from './GLOBAL/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -27,18 +28,19 @@ import { ReversePipe } from './pipes/reverse.pipe';
     AboutComponent,
     PageNotFoundComponent,
     ProjectInfoComponent,
-    ReversePipe
+    ReversePipe,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ParticlesModule
   ],
   providers: [
-    ProjectsService,
-    ProjectInfoService
+    ProjectsService
   ],
   bootstrap: [AppComponent]
 })

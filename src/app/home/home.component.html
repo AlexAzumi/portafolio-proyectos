@@ -3,7 +3,7 @@
 <div class="row fade-in-top bg-light py-3" *ngIf="projects else noProjects">
   <div class="col-md-6 my-2" *ngFor="let project of projects | reverse">
     <div class="proyect-card border border-primary rounded bg-primary shadow-sm">
-      <a class="text-decoration-none" routerLink="project-info/{{ project.id }}">
+      <a class="text-decoration-none" routerLink="proyecto/{{ project.id }}">
         <img
           class="img-fluid rounded-top"
           src="assets/images/card-image/{{ project.id }}.jpg">

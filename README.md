@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fb649db8-643f-43d1-85b1-428ce47cdc64/deploy-status)](https://app.netlify.com/sites/azumi-vault/deploys)
 # Azumi's vault
 Portafolio de proyectos web de mis **proyectos personales** importantes.
 

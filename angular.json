@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "azumi-web": {
+    "azumi-vault": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,14 +13,15 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/azumi-web",
+            "outputPath": "dist/azumi-vault",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/_redirects"
             ],
             "styles": [
               "src/styles.css"
@@ -57,18 +58,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "azumi-web:build"
+            "browserTarget": "azumi-vault:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "azumi-web:build:production"
+              "browserTarget": "azumi-vault:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "azumi-web:build"
+            "browserTarget": "azumi-vault:build"
           }
         },
         "test": {
@@ -102,7 +103,7 @@
         }
       }
     },
-    "azumi-web-e2e": {
+    "azumi-vault-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -111,11 +112,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "azumi-web:serve"
+            "devServerTarget": "azumi-vault:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "azumi-web:serve:production"
+              "devServerTarget": "azumi-vault:serve:production"
             }
           }
         },
@@ -131,5 +132,5 @@
       }
     }
   },
-  "defaultProject": "azumi-web"
+  "defaultProject": "azumi-vault"
 }

@@ -1,4 +1,4 @@
-<div class="fade-in-top py-4" *ngIf="project">
+<div class="fade-in-top py-4" *ngIf="project else noProjectInfo">
   <button
     class="btn btn-outline-primary mb-3 mb-md-0"
     routerLink="">
@@ -46,3 +46,6 @@
     </a>
   </div>
 </div>
+<ng-template #noProjectInfo>
+  <p class="display-4 text-center">No se ha encontrado la información del proyecto</p>
+</ng-template>

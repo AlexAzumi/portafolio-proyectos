@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 // Servicios
-import { ProjectInfoService } from '../services/project-info.service';
+import { ProjectsService } from '../services/projects.service';
 // Models
 import { ProjectInfo } from '../models/project-info.model';
 
@@ -14,18 +14,18 @@ import { ProjectInfo } from '../models/project-info.model';
 })
 export class ProjectInfoComponent implements OnInit {
   // Datos
-  public id: Number;
+  public id: String;
   public project: ProjectInfo;
   constructor(
     private route: ActivatedRoute,
-    private projectInfoService: ProjectInfoService,
+    private projectsService: ProjectsService,
     private titleSerive: Title) { }
 
   ngOnInit() {
     // Obtener ID
     this.id = this.route.snapshot.params.id;
     // Obtener información del proyecto
-    this.projectInfoService.getProjectInfo(this.id).subscribe(
+    this.projectsService.getProjectInfo(this.id).subscribe(
       info => {
         this.project = info;
         // Cambiar título

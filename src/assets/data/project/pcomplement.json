@@ -1,5 +1,5 @@
 {
-    "id": "1",
+    "id": "pcomplement",
     "title": "PComplement",
     "description": "Aplicación de escritorio, con base de datos MySQL y comunicada a través de ODBC el cual permite controlar el almacen de una empresa dedicada a la venta de componentes de computadora.",
     "type": "Aplicación de escritorio (Windows)",

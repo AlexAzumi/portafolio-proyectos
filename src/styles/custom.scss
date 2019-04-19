@@ -79,6 +79,11 @@ body {
     @include rfs(30, true);
 }
 
+// Carousel
+.carousel {
+  border: 2px solid $gray-800;
+}
+
 // Footer
 .footer {
     background-color: $primary;

@@ -22,5 +22,11 @@
         "title": "Misioneros del amor y la pureza",
         "description": "Página web dedicada al grupo ÁGAPE",
         "date": "Enero de 2019"
+    },
+    {
+      "id": "jagardev-website",
+      "title": "Sitio web de JagarDev",
+      "description": "Página del grupo JagarDev",
+      "date": "Abril de 2019"
     }
 ]

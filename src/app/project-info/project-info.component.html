@@ -8,7 +8,7 @@
   <p class="text-right project-date"><b>Fecha: </b>{{ project.date }}</p>
   <hr>
   <!-- Carousel -->
-  <ngb-carousel *ngIf="project.imagesURL">
+  <ngb-carousel class="rounded" *ngIf="project.imagesURL">
     <ng-template ngbSlide *ngFor="let image of project.imagesURL; index as i">
       <img class="d-block w-100" [src]="image" alt="Imagen {{ i + 1 }}">
     </ng-template>

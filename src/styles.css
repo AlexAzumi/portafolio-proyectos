@@ -79,6 +79,10 @@ body {
   }
 }
 
+.carousel {
+  border: 2px solid #343a40;
+}
+
 .footer {
   background-color: #303F9F;
   bottom: 0;

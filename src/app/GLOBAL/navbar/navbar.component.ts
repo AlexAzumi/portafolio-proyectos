@@ -9,10 +9,9 @@ import { Component } from '@angular/core';
 export class NavbarComponent {
   public isCollapsed: Boolean = true;
   // Ocultar navbar
-  collapseNavbar() {
+  collapseNavbar(): void {
     if (!this.isCollapsed) {
       this.isCollapsed = true;
     }
-    return false;
   }
 }

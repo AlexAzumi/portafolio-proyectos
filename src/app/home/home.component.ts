@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
 	myParams: object = {};
 	width: number = 100;
   height: number = 100;
-  
+
   constructor(private titleService: Title, private projectsService: ProjectsService) { }
 
   ngOnInit() {
@@ -42,10 +42,10 @@ export class HomeComponent implements OnInit {
     this.myParams = {
       particles: {
         number: {
-            value: 8,
+            value: 1,
             density: {
               enable: true,
-              value_area: 800
+              value_area: 100
             }
         },
         color: {

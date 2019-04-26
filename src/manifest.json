@@ -1,0 +1,16 @@
+{
+    "short_name": "Azumi's Vault",
+    "name": "Azumi's Vault - Portafolio de Alejandro Suárez",
+    "icons": [
+        {
+            "src": "/assets/icon.png",
+            "type": "image/png",
+            "sizes": "80x80"
+        }
+    ],
+    "start_url": "/index.html",
+    "theme_color": "#303F9F",
+    "background_color": "#FFFFFF",
+    "display": "standalone",
+    "orientation": "portrait"
+}

@@ -6,7 +6,8 @@
       <a class="text-decoration-none" routerLink="proyecto/{{ project.id }}">
         <img
           class="img-fluid rounded-top"
-          src="assets/images/card-image/{{ project.id }}.jpg">
+          src="assets/images/card-image/{{ project.id }}.jpg"
+          [alt]="project.title">
         <p class="h2 text-center text-light pt-2 pt-md-1">{{ project.title }}</p>
         <hr>
         <p class="px-2 text-light">{{ project.description }}</p>

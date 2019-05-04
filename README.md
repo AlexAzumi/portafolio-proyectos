@@ -1,5 +1,5 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/eaf1007b-cb2f-4151-9922-e1560ff75126/deploy-status)](https://app.netlify.com/sites/azumi-vault/deploys)
-# Azumi's vault
+# Azumi's vault (Portafolio de Alejandro Suárez)
 Portafolio de proyectos web de mis **proyectos personales** importantes.
 
 ## Correr de manera local
@@ -7,7 +7,6 @@ Para correr el proyecto de manera local necesitas seguir un par de pasos sencill
 - git
 - npm 6.4.1 o más nuevo
 - Angular CLI 7.1.4 o más nuevo
-- SASS command line (Opcional. Sólo si quiere compilar el archivo `styles/custom.scss` a `styles.css`)
 
 Primero se necesita clonar el repositorio con el siguiente comando:
 ```
@@ -19,18 +18,19 @@ Una vez clonado el repositorio, se necesita descargar todas las dependenicas con
 ```
 npm install
 ```
-Después de haber descargado todas las dependencias, puede ejecutar el proyecto en modo local con:
+Ahora es necesario compilar la hoja de estilos:
+```
+npm run sass
+```
+Después de compilar los estilos estará listo para ejecutarse de manera local:
 ```
 ng serve --open
 ```
 > El argumento *--open* es para que automáticamente se abra la página en el navegador, de igual manera puede acceder en la dirección *http://localhost:4200/*
 
-Puede compilar los estilos personalizados de Bootstrap 4 con:
-```
-npm run sass
-```
 ## Compilar versión de producción
 Si quiere compilar la versión de producción use el siguiente comando:
 ```
-ng build --prod
+npm run build
 ```
+> Nota: Este comando compila y minifica automáticamente la hoja de estilos

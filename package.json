@@ -4,11 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "sass src/styles/custom.scss src/styles.css --style compressed && ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "sass": "sass src/styles/custom.scss src/styles.css --watch"
+    "sass:watch": "sass src/styles/custom.scss src/styles.css --watch"
   },
   "private": true,
   "dependencies": {
@@ -46,6 +46,7 @@
     "karma-jasmine-html-reporter": "^0.2.2",
     "protractor": "~5.4.0",
     "rfs": "^8.0.1",
+    "sass": "^1.20.1",
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
     "typescript": "~3.1.6"

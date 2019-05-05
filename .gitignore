@@ -42,6 +42,9 @@ testem.log
 .DS_Store
 Thumbs.db
 
-#Styles
+# Styles
 src/styles.css
 src/styles.css.map
+
+# Netlify
+.netlify/*

@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "sass src/styles/custom.scss src/styles.css --style compressed && ng build --prod",
+    "build": "sass src/styles/custom.scss src/styles.css && ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",

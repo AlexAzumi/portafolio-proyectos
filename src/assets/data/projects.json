@@ -1,11 +1,5 @@
 [
     {
-        "id": "pcomplement",
-        "title": "PComplement",
-        "description": "Aplicación para la gestión de ventas de un negocio de venta de componentes de computadora",
-        "date": "Junio de 2017"
-    },
-    {
         "id": "brightness-control",
         "title": "Brightness Control",
         "description": "Monitorización de aplicación Arduino, el cual puede cambiar parámetros en tiempo real",

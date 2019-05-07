@@ -1,6 +1,7 @@
 // Dependencias
 import { Component, OnInit } from '@angular/core';
-import * as AOS from 'AOS';
+// AOS
+declare var AOS: any;
 
 @Component({
   selector: 'app-root',

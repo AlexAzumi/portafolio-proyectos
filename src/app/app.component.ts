@@ -1,10 +1,17 @@
-import { Component } from '@angular/core';
+// Dependencias
+import { Component, OnInit } from '@angular/core';
+import AOS from 'AOS';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  title = 'azumi-web';
+export class AppComponent implements OnInit {
+  /*
+   * OnInit
+   */
+  ngOnInit() {
+    AOS.init();
+  }
 }

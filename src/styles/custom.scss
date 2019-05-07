@@ -12,7 +12,8 @@ $enable-responsive-font-sizes: true;
 
 // Spacers
 $spacers: (
-  large: ($spacer * 12)
+  large: ($spacer * 12),
+  large-mobile: ($spacer * 6)
 );
 
 // Colores
@@ -84,6 +85,13 @@ body {
 .nav-fade-top-3 {
   -webkit-animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 1000ms both;
   animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 1000ms both;
+}
+
+// Media
+@include media-breakpoint-down(md) {
+  .navbar {
+    background-color: rgba($color: $gray-800, $alpha: 0.8) !important;
+  }
 }
 
 /*

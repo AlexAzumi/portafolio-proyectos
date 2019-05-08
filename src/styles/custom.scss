@@ -5,7 +5,7 @@
 @import "../../node_modules/bootstrap/scss/variables";
 @import "../../node_modules/bootstrap/scss/mixins";
 // Fuentes
-@import url('https://fonts.googleapis.com/css?family=Poppins|Rubik|Nunito');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu|Roboto+Mono|Open+Sans:300');
 
 // Opciones
 $enable-responsive-font-sizes: true;
@@ -18,10 +18,12 @@ $spacers: (
 
 // Colores
 $primary: #03A9F4;
+$secondary: #512DA8;
 
 // Tema
 $theme-colors: (
-  "primary": $primary
+  "primary": $primary,
+  "secondary": $secondary
 );
 
 // Bootstrap
@@ -31,7 +33,7 @@ $theme-colors: (
  * Global
  */
 * {
-  font-family: 'Nunito', Arial, Helvetica, sans-serif;
+  font-family: 'Open Sans', Arial, Helvetica;
 }
 
 html {
@@ -41,7 +43,7 @@ html {
 
 body {
   background-attachment: fixed;
-  background-color: $gray-800;
+  background-color: $gray-900;
   background-image: url('/assets/images/bg.png');
   background-repeat: repeat;
   min-height: 100%;
@@ -50,24 +52,21 @@ body {
 }
 
 .title {
-  font-family: 'Rubik', Arial, Helvetica, sans-serif;
-}
-
-.info-card {
-  background-color: rgba($color: $gray-800, $alpha: 0.8);
+  font-family: 'Roboto Mono', Arial, Helvetica, sans-serif;
+  font-size: 3rem;
 }
 
 /*
  * Navbar
  */
 .nav-link {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-size: 1.2em;
   transition: 150ms;
 }
 
 .nav-link:hover {
-  background-color: $gray-900;
+  background-color: $primary;
   color: $white !important;
 }
 
@@ -93,7 +92,7 @@ body {
 }
 
 // Media
-@include media-breakpoint-down(md) {
+@media (max-width: 768px) {
   .navbar {
     background-color: rgba($color: $gray-800, $alpha: 0.8) !important;
   }
@@ -102,13 +101,30 @@ body {
 /*
  * Proyectos
  */
+.card-info {
+  background-color: $gray-900;
+}
+
+.card-info:hover {
+  translate: translateY(10px);
+}
+
+.card-info:hover > div .project-img {
+  filter: grayscale(0);
+}
+
 .project-img {
   filter: grayscale(100);
   transition: filter 250ms;
 }
 
-.project-img:hover {
-  filter: grayscale(0);
+.card-webpage {
+  background-color: $gray-900;
+  bottom: 10px;
+  color: $primary;
+  position: absolute;
+  right: 5px;
+  transition: 250ms;
 }
 
 /*

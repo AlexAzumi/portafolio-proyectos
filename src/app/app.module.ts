@@ -9,11 +9,11 @@ import { ProjectsService } from './services/projects.service';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/GLOBAL/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
-// Pipes
-import { ReversePipe } from './pipes/reverse.pipe';
-import { FooterComponent } from './components/GLOBAL/footer/footer.component';
 import { AboutComponent } from './components/about/about.component';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { ContactComponent } from './components/contact/contact.component';
+// Pipes
+import { ReversePipe } from './pipes/reverse.pipe';
 
 @NgModule({
   declarations: [
@@ -21,9 +21,9 @@ import { ProjectsComponent } from './components/projects/projects.component';
     NavbarComponent,
     HomeComponent,
     ReversePipe,
-    FooterComponent,
     AboutComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

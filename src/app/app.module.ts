@@ -13,6 +13,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ReversePipe } from './pipes/reverse.pipe';
 import { FooterComponent } from './components/GLOBAL/footer/footer.component';
 import { AboutComponent } from './components/about/about.component';
+import { ProjectsComponent } from './components/projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { AboutComponent } from './components/about/about.component';
     HomeComponent,
     ReversePipe,
     FooterComponent,
-    AboutComponent
+    AboutComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,

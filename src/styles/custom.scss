@@ -40,7 +40,7 @@ html {
 
 body {
   background-color: $gray-800;
-  background-image: url('/assets/bg.png');
+  background-image: url('/assets/images/bg.png');
   background-repeat: repeat;
   background-attachment: fixed;
   min-height: 100%;
@@ -50,6 +50,10 @@ body {
 
 .title {
   font-family: 'Rubik', Arial, Helvetica, sans-serif;
+}
+
+.info-card {
+  background-color: rgba($color: $gray-800, $alpha: 0.8);
 }
 
 /*
@@ -95,10 +99,15 @@ body {
 }
 
 /*
- * Sobre mí
+ * Proyectos
  */
-.about {
-  background-color: rgba($color: $gray-800, $alpha: 0.8);
+.project-img {
+  filter: grayscale(100);
+  transition: filter 250ms;
+}
+
+.project-img:hover {
+  filter: grayscale(0);
 }
 
 /*

@@ -127,6 +127,17 @@ body {
   transition: 250ms;
 }
 
+// Media
+@media (max-width: 992px) {
+  .card-webpage {
+    position: static;
+    bottom: 0;
+    right: 0;
+    background-color: transparent;
+  }
+}
+
+
 /*
  * Animaciones
  * Propiedad de Animista - http://animista.net

@@ -1,11 +1,11 @@
 {
-    "short_name": "Azumi's Vault",
-    "name": "Azumi's Vault - Portafolio de Alejandro Suárez",
+    "short_name": "Alejandro Suárez",
+    "name": "Alejandro Suárez | Portafolio personal",
     "icons": [
         {
-            "src": "/assets/icon.png",
+            "src": "/assets/images/favicon.png",
             "type": "image/png",
-            "sizes": "80x80"
+            "sizes": "144x144"
         }
     ],
     "start_url": "/index.html",

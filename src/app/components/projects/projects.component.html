@@ -1,0 +1,35 @@
+<div
+  id="projects"
+  data-aos="fade-right"
+  data-aos-duration="1000"
+  data-aos-once="true"
+  class="mb-2">
+    <h2 class="text-center text-primary title mb-4">Proyectos</h2>
+    <div
+      *ngIf="projects"
+      class="row py-3 align-items-center">
+      <!-- Carta -->
+      <div
+        *ngFor="let project of projects | reverse"
+        class="col-md-6 mb-3 mb-md-4">
+        <div class="card-info p-3 rounded shadow">
+          <h3 class="text-info text-center">{{project.title}}</h3>
+          <div class="position-relative">
+            <img
+              [src]="project.img"
+              class="img-fluid project-img mb-1"
+              [alt]="project.title">
+                <a
+                  class="d-block card-webpage py-lg-1 px-lg-3 rounded-pill text-center"
+                  *ngIf="project.url"
+                  [href]="project.url"
+                  target="_blank"
+                  rel="noopener">
+                    {{project.url}}
+            </a>
+          </div>
+          <p class="text-light text-center mb-0">{{project.description}}</p>
+        </div>
+      </div>
+    </div>
+</div>

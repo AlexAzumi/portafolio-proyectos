@@ -1,32 +1,23 @@
 [
     {
-        "id": "pcomplement",
-        "title": "PComplement",
-        "description": "Aplicación para la gestión de ventas de un negocio de venta de componentes de computadora",
-        "date": "Junio de 2017"
-    },
-    {
-        "id": "brightness-control",
-        "title": "Brightness Control",
-        "description": "Monitorización de aplicación Arduino, el cual puede cambiar parámetros en tiempo real",
-        "date": "Diciembre de 2017"
-    },
-    {
-        "id": "medal-of-darkness",
         "title": "Medal of Darkness",
         "description": "Videojuego para la ayuda de la compresión lectora y razonamiento lógico del jugador",
-        "date": "Mayo de 2018"
+        "date": "Mayo de 2018",
+        "img": "/assets/images/project/medalofdarkness.jpg",
+        "url": "https://aldanproject.000webhostapp.com/"
     },
     {
-        "id": "misioneros-del-amor-y-la-pureza",
         "title": "Misioneros del amor y la pureza",
-        "description": "Página web dedicada al grupo ÁGAPE",
-        "date": "Enero de 2019"
+        "description": "Página web dedicada al grupo religioso ÁGAPE",
+        "date": "Enero de 2019",
+        "img": "/assets/images/project/misionagape.jpg",
+        "url": null
     },
     {
-      "id": "jagardev-website",
-      "title": "Sitio web de JagarDev",
-      "description": "Página del grupo JagarDev",
-      "date": "Abril de 2019"
+      "title": "Sitio web de Jagar;Dev",
+      "description": "Página web del grupo de programación Jagar;Dev",
+      "date": "Abril de 2019",
+      "img": "/assets/images/project/jagardev.jpg",
+      "url": "https://jagardev.netlify.com/"
     }
 ]

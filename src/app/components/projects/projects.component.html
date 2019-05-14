@@ -13,7 +13,7 @@
         #list
         *ngFor="let project of projects | reverse"
         class="col-md-6 mb-3 mb-md-4">
-        <div class="card-info p-3 rounded">
+        <div class="card-info p-3 rounded shadow">
           <h3 class="text-info text-center">{{project.title}}</h3>
           <div class="position-relative">
             <img
@@ -24,7 +24,8 @@
                   class="d-block card-webpage py-lg-1 px-lg-3 rounded-pill text-center"
                   *ngIf="project.url"
                   [href]="project.url"
-                  target="_blank">
+                  target="_blank"
+                  rel="noopener">
                     {{project.url}}
             </a>
           </div>

@@ -18,12 +18,10 @@ $spacers: (
 
 // Colores
 $primary: #03A9F4;
-$secondary: #512DA8;
 
 // Tema
 $theme-colors: (
-  "primary": $primary,
-  "secondary": $secondary
+  "primary": $primary
 );
 
 // Bootstrap
@@ -125,6 +123,10 @@ body {
   position: absolute;
   right: 5px;
   transition: 250ms;
+
+  &:visited {
+    color: $info;
+  }
 }
 
 // Media

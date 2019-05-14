@@ -8,14 +8,14 @@
     },
     {
         "title": "Misioneros del amor y la pureza",
-        "description": "Página web dedicada al grupo ÁGAPE",
+        "description": "Página web dedicada al grupo religioso ÁGAPE",
         "date": "Enero de 2019",
         "img": "/assets/images/project/misionagape.jpg",
         "url": null
     },
     {
-      "title": "Sitio web de JagarDev",
-      "description": "Página del grupo JagarDev",
+      "title": "Sitio web de Jagar;Dev",
+      "description": "Página web del grupo de programación Jagar;Dev",
       "date": "Abril de 2019",
       "img": "/assets/images/project/jagardev.jpg",
       "url": "https://jagardev.netlify.com/"

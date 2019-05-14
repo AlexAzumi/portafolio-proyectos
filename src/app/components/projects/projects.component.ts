@@ -1,5 +1,5 @@
 // Dependencias
-import { Component, OnInit, ViewChild, ViewChildren, QueryList, AfterViewInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 // Servicios
 import { ProjectsService } from 'src/app/services/projects.service';
@@ -13,16 +13,11 @@ declare var AOS: any;
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.css']
 })
-export class ProjectsComponent implements OnInit, AfterViewInit {
+export class ProjectsComponent implements OnInit {
   // Proyectos
   public projects: Project[];
   // Observable
   private request: Subscription;
-
-  /*
-   * Observar elemento 'list'
-   */
-  @ViewChildren('list') list: QueryList<any>;
 
   /*
    * Constructor
@@ -37,16 +32,11 @@ export class ProjectsComponent implements OnInit, AfterViewInit {
     this.request = this.projectsService.getProjects().subscribe((res) => {
       this.projects = res;
     }, (error) => console.log(error));
-  }
-
-  /*
-   * AfterViewInit
-   */
-  ngAfterViewInit() {
-    // Suscribirse a los cambios del ngFor
-    this.list.changes.subscribe((event) => {
-      AOS.refreshHard();
-    });
+    // Refrescar después de un segundo
+    const refresh = setTimeout(() => {
+      AOS.refresh();
+      console.log('AOS refrescado');
+    }, 1000);
   }
 
   /*

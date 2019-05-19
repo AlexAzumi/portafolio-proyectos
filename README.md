@@ -1,4 +1,5 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/eaf1007b-cb2f-4151-9922-e1560ff75126/deploy-status)](https://app.netlify.com/sites/azumi-vault/deploys)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/alexazumi/azumi-vault.svg?style=popout)
 # Azumi's vault (Portafolio de Alejandro Suárez)
 Portafolio de proyectos web de mis **proyectos personales** importantes.
 

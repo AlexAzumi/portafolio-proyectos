@@ -1,8 +1,8 @@
 // Dependencias
-import { Component, OnDestroy, OnInit} from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { Title } from '@angular/platform-browser';
 // Servicios
-import { ProjectsService } from 'src/app/services/projects.service';
+import { ProjectsService } from 'src/app/services/projects/projects.service';
 // Modelos
 import { Project } from 'src/app/models/project.model';
 

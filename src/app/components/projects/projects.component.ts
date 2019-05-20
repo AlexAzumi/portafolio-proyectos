@@ -2,7 +2,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 // Servicios
-import { ProjectsService } from 'src/app/services/projects.service';
+import { ProjectsService } from 'src/app/services/projects/projects.service';
 // Modelos
 import { Project } from 'src/app/models/project.model';
 // AOS

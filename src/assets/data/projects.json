@@ -19,5 +19,12 @@
       "date": "Abril de 2019",
       "img": "/assets/images/project/jagardev.jpg",
       "url": "https://jagardev.netlify.com/"
+    },
+    {
+      "title": "Healthy Catching",
+      "description": "Juego educativo para dispositivos Android",
+      "date": "Mayo de 2019",
+      "img": "/assets/images/project/healthycatching.jpg",
+      "url": "https://healthy-catching.netlify.com/"
     }
 ]

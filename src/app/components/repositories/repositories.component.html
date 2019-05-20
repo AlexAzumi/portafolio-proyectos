@@ -1,3 +1,27 @@
-<p>
-  repositories works!
-</p>
+<div
+  id="repositories"
+  data-aos="fade-right"
+  data-aos-duration="1000"
+  data-aos-once="true"
+  class="mb-2">
+    <h2 class="text-center text-primary title mb-4">Repositorios</h2>
+    <div
+      *ngIf="repositories; else error"
+      class="row py-3 align-items-center">
+      <!-- Carta -->
+      <div
+        *ngFor="let repository of repositories"
+        class="col-md-6 mb-3 mb-md-4">
+        <a class="text-decoration-none" [href]="repository.html_url">
+          <div class="card-info p-3 rounded shadow">
+            <h4 class="text-primary">{{repository.name}}</h4>
+            <p class="text-muted mb-0">{{repository.full_name}}</p>
+            <p class="text-light mb-0">{{repository.description}}</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <ng-template #error>
+      <p class="h3 text-light text-center">Ha ocurrido un error al consultar los repositorios</p>
+    </ng-template>
+</div>

@@ -70,21 +70,26 @@ body {
 
 // Animaciones
 .nav-fade-top-0 {
-  -webkit-animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 250ms both;
-  animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 250ms both;
+  -webkit-animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 200ms both;
+  animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 200ms both;
 }
 
 .nav-fade-top-1 {
-  -webkit-animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 500ms both;
-  animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 500ms both;
+  -webkit-animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 400ms both;
+  animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 400ms both;
 }
 
 .nav-fade-top-2 {
-  -webkit-animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 750ms both;
-  animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 750ms both;
+  -webkit-animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 600ms both;
+  animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 600ms both;
 }
 
 .nav-fade-top-3 {
+  -webkit-animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 800ms both;
+  animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 800ms both;
+}
+
+.nav-fade-top-4 {
   -webkit-animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 1000ms both;
   animation: fade-in-top 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) 1000ms both;
 }

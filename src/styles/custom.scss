@@ -54,6 +54,16 @@ body {
   font-size: 3rem;
 }
 
+.anchor a.target {
+  position: absolute;
+  left: 0px;
+  top: -80px;
+}
+
+.anchor {
+  position: relative;
+}
+
 /*
  * Navbar
  */
@@ -66,6 +76,13 @@ body {
 .nav-link:hover {
   background-color: $primary;
   color: $white !important;
+}
+
+.navbar-sticky {
+  background-color: $gray-900 !important;
+  padding-bottom: 0.5rem !important;
+  padding-top: 0.5rem !important;
+  transition: 250ms;
 }
 
 // Animaciones
@@ -97,7 +114,7 @@ body {
 // Media
 @media (max-width: 768px) {
   .navbar {
-    background-color: rgba($color: $gray-800, $alpha: 0.8) !important;
+    background-color: rgba($color: $gray-900, $alpha: 1) !important;
   }
 }
 
@@ -143,7 +160,6 @@ body {
     background-color: transparent;
   }
 }
-
 
 /*
  * Animaciones

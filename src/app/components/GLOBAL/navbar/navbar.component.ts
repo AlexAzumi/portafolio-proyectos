@@ -7,8 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
+  // Colapsar
   public isCollapsed: Boolean = true;
-  // Ocultar navbar
+  /*
+   * Ocultar barra de navegación
+   */
   collapseNavbar(): void {
     if (!this.isCollapsed) {
       this.isCollapsed = true;

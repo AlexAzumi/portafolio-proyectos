@@ -1,5 +1,5 @@
 // Dependencias
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 // AOS
 declare var AOS: any;
 
@@ -14,5 +14,25 @@ export class AppComponent implements OnInit {
    */
   ngOnInit() {
     AOS.init();
+  }
+
+  /*
+   * Offset de la página
+   */
+  @HostListener('window:scroll', ['$event'])
+  onWindowScroll(e): void {
+    if (window.pageYOffset > 80) {
+      let element = document.getElementById('navbar');
+      // Pantalla mediana o mayor
+      if (window.innerWidth > 768) {
+        element.classList.add('sticky-top', 'navbar-sticky', 'shadow-sm');
+      }
+    } else {
+      let element = document.getElementById('navbar');
+      // Pantalla mediana o mayor
+      if (window.innerWidth > 768) {
+        element.classList.remove('sticky-top', 'navbar-sticky', 'shadow-sm');
+      }
+    }
   }
 }

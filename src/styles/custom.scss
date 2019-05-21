@@ -112,9 +112,17 @@ body {
 }
 
 // Media
-@media (max-width: 768px) {
+@include media-breakpoint-down(sm) {
   .navbar {
     background-color: rgba($color: $gray-900, $alpha: 1) !important;
+  }
+  .nav-fade-top-0,
+  .nav-fade-top-1,
+  .nav-fade-top-2,
+  .nav-fade-top-3,
+  .nav-fade-top-4 {
+    -webkit-animation: none;
+    animation: none;
   }
 }
 

@@ -1,10 +1,10 @@
 {
   "name": "azumi-vault",
-  "version": "3.2.0",
+  "version": "3.2.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "sass src/styles/custom.scss src/styles.css && ng build --prod",
+    "build": "npm run sass && ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",

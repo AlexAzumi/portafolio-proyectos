@@ -17,7 +17,6 @@ import { FooterComponent } from './components/GLOBAL/footer/footer.component';
 import { RepositoriesComponent } from './components/repositories/repositories.component';
 // Pipes
 import { ReversePipe } from './pipes/reverse.pipe';
-import { SecretComponent } from './components/secret/secret.component';
 
 @NgModule({
   declarations: [
@@ -29,8 +28,7 @@ import { SecretComponent } from './components/secret/secret.component';
     ProjectsComponent,
     ContactComponent,
     FooterComponent,
-    RepositoriesComponent,
-    SecretComponent
+    RepositoriesComponent
   ],
   imports: [
     BrowserModule,

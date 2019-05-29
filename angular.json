@@ -29,8 +29,7 @@
               "src/styles.css"
             ],
             "scripts": [
-              "node_modules/aos/dist/aos.js",
-              "assets/secret/tetris.js"
+              "node_modules/aos/dist/aos.js"
             ]
           },
           "configurations": {

@@ -30,7 +30,7 @@
             ],
             "scripts": [
               "node_modules/aos/dist/aos.js",
-              "src/assets/secret/tetris.js"
+              "assets/secret/tetris.js"
             ]
           },
           "configurations": {

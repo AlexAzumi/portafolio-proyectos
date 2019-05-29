@@ -64,13 +64,6 @@ body {
   position: relative;
 }
 
-// Media
-@include media-breakpoint-down(sm) {
-  .title {
-    font-size: 2.5rem;
-  }
-}
-
 /*
  * Navbar
  */

@@ -140,10 +140,6 @@ body {
   background-color: $gray-900;
 }
 
-.card-info:hover {
-  translate: translateY(10px);
-}
-
 .card-info:hover > div .project-img {
   filter: grayscale(0);
 }

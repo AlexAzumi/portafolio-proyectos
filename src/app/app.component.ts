@@ -22,13 +22,13 @@ export class AppComponent implements OnInit {
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(e): void {
     if (window.pageYOffset > 80) {
-      let element = document.getElementById('navbar');
+      const element = document.getElementById('navbar');
       // Pantalla mediana o mayor
       if (window.innerWidth > 768) {
         element.classList.add('sticky-top', 'navbar-sticky', 'shadow-sm');
       }
     } else {
-      let element = document.getElementById('navbar');
+      const element = document.getElementById('navbar');
       // Pantalla mediana o mayor
       if (window.innerWidth > 768) {
         element.classList.remove('sticky-top', 'navbar-sticky', 'shadow-sm');

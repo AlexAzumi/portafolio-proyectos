@@ -19,7 +19,7 @@ export class RepositoriesComponent implements OnInit, OnDestroy {
 
   // Paginación
   public page: number;
-  public pageSize: number = 6;
+  public pageSize = 6;
 
   /*
    * Constructor

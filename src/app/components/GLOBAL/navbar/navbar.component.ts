@@ -23,7 +23,7 @@ export class NavbarComponent {
    */
   scrollTo(id): boolean {
     const element = document.getElementById(id);
-    element.scrollIntoView({behavior:"smooth"});
+    element.scrollIntoView({behavior: 'smooth'});
     return false;
   }
 }

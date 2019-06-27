@@ -17,4 +17,13 @@ export class NavbarComponent {
       this.isCollapsed = true;
     }
   }
+
+  /*
+   * Hacer scroll a elemento
+   */
+  scrollTo(id): boolean {
+    const element = document.getElementById(id);
+    element.scrollIntoView({behavior:"smooth"});
+    return false;
+  }
 }

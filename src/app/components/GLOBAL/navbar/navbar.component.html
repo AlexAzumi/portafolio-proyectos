@@ -14,36 +14,36 @@
     <span class="navbar-toggler-icon"></span>
   </button>
   <!-- Menú -->
-  <div class="collapse navbar-collapse" [ngbCollapse]="isCollapsed">
+  <div class="collapse navbar-collapse" [collapse]="isCollapsed" [isAnimated]="true">
     <div class="navbar-nav ml-auto">
       <a
         class="nav-item nav-link py-2 px-md-3 text-center rounded-pill mx-md-1 nav-fade-top-0"
         href="#home"
-        (click)="collapseNavbar()">
+        (click)="collapseNavbar(); scrollTo('home')">
         Inicio
       </a>
       <a
         class="nav-item nav-link py-2 px-md-3 text-center rounded-pill mx-md-1 nav-fade-top-1"
         href="#about"
-        (click)="collapseNavbar()">
+        (click)="collapseNavbar(); scrollTo('about')">
         Sobre mí
       </a>
       <a
         class="nav-item nav-link py-2 px-md-3 text-center rounded-pill mx-md-1 nav-fade-top-2"
         href="#projects"
-        (click)="collapseNavbar()">
+        (click)="collapseNavbar(); scrollTo('projects')">
         Proyectos
       </a>
       <a
         class="nav-item nav-link py-2 px-md-3 text-center rounded-pill mx-md-1 nav-fade-top-3"
         href="#repositories"
-        (click)="collapseNavbar()">
+        (click)="collapseNavbar(); scrollTo('repositories')">
         Repositorios
       </a>
       <a
         class="nav-item nav-link py-2 px-md-3 text-center rounded-pill mx-md-1 nav-fade-top-4"
         href="#contact"
-        (click)="collapseNavbar()">
+        (click)="collapseNavbar(); scrollTo('contact')">
         Contacto
       </a>
     </div>

@@ -1,11 +1,13 @@
 // Dependencias
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 // Servicios
 import { ProjectsService } from './services/projects/projects.service';
 import { RepositoriesService } from './services/repositories/repositories.service';
+// ngx-bootstrap
+import { CollapseModule } from 'ngx-bootstrap/collapse';
 // Componentes
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/GLOBAL/navbar/navbar.component';
@@ -32,8 +34,9 @@ import { ReversePipe } from './pipes/reverse.pipe';
   ],
   imports: [
     BrowserModule,
-    NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    CollapseModule.forRoot()
   ],
   providers: [
     ProjectsService,

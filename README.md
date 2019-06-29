@@ -3,7 +3,6 @@
 [![CodeFactor](https://www.codefactor.io/repository/github/alexazumi/azumi-vault/badge)](https://www.codefactor.io/repository/github/alexazumi/azumi-vault)
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/alexazumi/azumi-vault.svg?style=popout)
 ![GitHub](https://img.shields.io/github/license/alexazumi/azumi-vault.svg?style=popout)
-![David](https://img.shields.io/david/alexazumi/azumi-vault.svg?style=popout)
 
 <p align="center">
   <img src="/img/preview.png" alt="Captura del portafolio">

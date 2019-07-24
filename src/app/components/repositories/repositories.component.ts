@@ -24,7 +24,7 @@ export class RepositoriesComponent implements OnInit, OnDestroy {
     pageSize: 6,
     nextText: 'Siguiente',
     previousText: 'Anterior'
-  }
+  };
 
   /*
    * Constructor

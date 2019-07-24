@@ -138,6 +138,37 @@ body {
 }
 
 /*
+ * Paginación
+ */
+.pagination {
+  // Link normal
+  .page-link {
+    background-color: $gray-900;
+    color: $primary;
+    transition: all 250ms;
+
+    &:hover {
+      background-color: $info;
+      border-color: $info;
+      color: $white;
+    }
+  }
+  // Link activado
+  .page-item.active {
+    .page-link {
+      background-color: $primary;
+      border-color: $primary;
+    }
+  }
+  // Link desactivado
+  .page-item.disabled {
+    .page-link {
+      background-color: $gray-800;
+    }
+  }
+}
+
+/*
  * Proyectos
  */
 .card-info {

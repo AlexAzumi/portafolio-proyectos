@@ -8,6 +8,7 @@ import { ProjectsService } from './services/projects/projects.service';
 import { RepositoriesService } from './services/repositories/repositories.service';
 // ngx-bootstrap
 import { CollapseModule } from 'ngx-bootstrap/collapse';
+import { PaginationModule } from 'ngx-bootstrap/pagination';
 // Componentes
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/GLOBAL/navbar/navbar.component';
@@ -36,7 +37,8 @@ import { ReversePipe } from './pipes/reverse.pipe';
     BrowserModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    CollapseModule.forRoot()
+    CollapseModule.forRoot(),
+    PaginationModule.forRoot()
   ],
   providers: [
     ProjectsService,

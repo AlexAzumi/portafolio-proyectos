@@ -6,19 +6,29 @@
     <a class="target" id="repositories"></a>
     <h2 class="text-center text-primary title mb-4">Repositorios</h2>
     <div
-      *ngIf="repositories; else error"
-      class="row py-3 align-items-center">
-      <!-- Carta -->
-      <div
-        *ngFor="let repository of repositories"
-        class="col-md-6 mb-3 mb-md-4">
-        <a class="text-decoration-none" [href]="repository.html_url">
-          <div class="card-info p-3 rounded shadow">
-            <h4 class="text-primary mb-0">{{repository.name}}</h4>
-            <p class="text-muted mb-1">{{repository.full_name}}</p>
-            <p class="text-light mb-0">{{repository.description}}</p>
-          </div>
-        </a>
+      *ngIf="totalRepositories; else error">
+      <div class="row py-3 align-items-center">
+        <!-- Carta -->
+        <div
+          *ngFor="let repository of repositories"
+          class="col-md-6 mb-3 mb-md-4">
+          <a class="text-decoration-none" [href]="repository.html_url">
+            <div class="card-info p-3 rounded">
+              <h4 class="text-primary mb-0">{{repository.name}}</h4>
+              <p class="text-muted mb-1">{{repository.full_name}}</p>
+              <p class="text-light mb-0">{{repository.description}}</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- Paginación -->
+      <div class="d-flex justify-content-center">
+        <pagination
+          [totalItems]="this.totalRepositories.length"
+          [itemsPerPage]="pagination.pageSize"
+          [nextText]="pagination.nextText"
+          [previousText]="pagination.previousText"
+          (pageChanged)="changePage($event)"></pagination>
       </div>
     </div>
     <ng-template #error>

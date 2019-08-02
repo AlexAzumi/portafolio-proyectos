@@ -4,4 +4,5 @@ export class Repository {
   html_url: String;
   description: String;
   fork: Boolean;
+  homepage: String;
 }

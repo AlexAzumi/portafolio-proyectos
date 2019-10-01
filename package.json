@@ -4,12 +4,10 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "npm run sass && ng build --prod",
+    "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "sass": "sass src/styles/custom.scss src/styles.css",
-    "sass:watch": "sass src/styles/custom.scss src/styles.css --watch"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {

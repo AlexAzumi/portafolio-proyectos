@@ -41,10 +41,3 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
-
-# Styles
-src/styles.css
-src/styles.css.map
-
-# Netlify
-.netlify/*

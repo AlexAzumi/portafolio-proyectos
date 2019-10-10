@@ -9,8 +9,7 @@ import { RepositoriesService } from 'src/app/services/repositories/repositories.
 
 @Component({
   selector: 'app-repositories',
-  templateUrl: './repositories.component.html',
-  styleUrls: ['./repositories.component.css']
+  templateUrl: './repositories.component.html'
 })
 export class RepositoriesComponent implements OnInit, OnDestroy {
   // Repositorios
@@ -34,14 +33,14 @@ export class RepositoriesComponent implements OnInit, OnDestroy {
   /*
    * OnInit
    */
-  ngOnInit() {
-    this.request = this.repositoriesService.getRepos().subscribe((repos) => {
-      // Filtrar
-      this.totalRepositories = repos.filter((item) => item.fork === false);
-      // Seleccionar diez
+  async ngOnInit() {
+    try {
+      this.totalRepositories = await this.repositoriesService.getRepos().toPromise();
+      this.totalRepositories.filter(repo => repo.fork === false);
       this.repositories = this.totalRepositories.slice(0, this.pagination.pageSize);
-      console.log(this.repositories);
-    });
+    } catch (ex) {
+      console.error(ex);
+    }
   }
 
   /*

@@ -1,5 +1,5 @@
 // Dependencias
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Subscription } from 'rxjs';
 // Servicios
 import { ProjectsService } from 'src/app/services/projects/projects.service';
@@ -10,10 +10,9 @@ declare var AOS: any;
 
 @Component({
   selector: 'app-projects',
-  templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.css']
+  templateUrl: './projects.component.html'
 })
-export class ProjectsComponent implements OnInit {
+export class ProjectsComponent implements OnInit, OnDestroy {
   // Proyectos
   public projects: Project[];
   // Observable
@@ -27,15 +26,16 @@ export class ProjectsComponent implements OnInit {
   /*
    * OnInit
    */
-  ngOnInit() {
-    // Guardar subscripción
-    this.request = this.projectsService.getProjects().subscribe((res) => {
-      this.projects = res;
-    }, (error) => console.log(error));
+  async ngOnInit() {
+    try {
+      this.projects = await this.projectsService.getProjects().toPromise();
+    } catch (ex) {
+      console.error(ex);
+    }
+
     // Refrescar después de un segundo
-    const refresh = setTimeout(() => {
+    setTimeout(() => {
       AOS.refresh();
-      console.log('AOS refrescado');
     }, 1000);
   }
 

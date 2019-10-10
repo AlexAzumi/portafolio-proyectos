@@ -1,4 +1,4 @@
-export class Project {
+export interface Project {
     title: String;
     description: String;
     date: String;

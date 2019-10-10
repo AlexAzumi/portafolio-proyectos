@@ -212,6 +212,42 @@ a {
 }
 
 /*
+ * Correo
+ */
+.mail {
+  align-items: center;
+  font-size: 1.25rem;
+
+  .btn {
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+
+    &:hover {
+      border-right: 1px solid $dark;
+    }
+  }
+
+  .email {
+    text-align: center;
+    background-color: $primary;
+    border-bottom-right-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+    border: 1px solid $primary;
+    margin: 0;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .mail {
+    .email {
+      border-bottom-left-radius: 0.3rem;
+      border-top-left-radius: 0.3rem;
+    }
+  }
+}
+
+/*
  * Animaciones
  * Propiedad de Animista - http://animista.net
  */

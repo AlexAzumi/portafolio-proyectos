@@ -3,9 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 // Servicios
 import { ProjectsService } from './services/projects/projects.service';
 import { RepositoriesService } from './services/repositories/repositories.service';
+import { TechnologiesService } from './services/technologies/technologies.service';
 // ngx-bootstrap
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { PaginationModule } from 'ngx-bootstrap/pagination';
@@ -23,26 +25,28 @@ import { ReversePipe } from './pipes/reverse.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent,
-    NavbarComponent,
-    HomeComponent,
-    ReversePipe,
     AboutComponent,
-    ProjectsComponent,
+    AppComponent,
     ContactComponent,
     FooterComponent,
-    RepositoriesComponent
+    HomeComponent,
+    NavbarComponent,
+    ProjectsComponent,
+    RepositoriesComponent,
+    ReversePipe,
   ],
   imports: [
-    BrowserModule,
-    HttpClientModule,
     BrowserAnimationsModule,
+    BrowserModule,
     CollapseModule.forRoot(),
+    FontAwesomeModule,
+    HttpClientModule,
     PaginationModule.forRoot()
   ],
   providers: [
     ProjectsService,
-    RepositoriesService
+    RepositoriesService,
+    TechnologiesService
   ],
   bootstrap: [AppComponent]
 })

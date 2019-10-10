@@ -1,4 +1,4 @@
-export class Repository {
+export interface Repository {
   name: String;
   full_name: String;
   html_url: String;

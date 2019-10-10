@@ -1,15 +1,29 @@
+// Dependencias
 import { Component, OnInit } from '@angular/core';
+// Servicios
+import { TechnologiesService } from '../../services/technologies/technologies.service';
 
 @Component({
   selector: 'app-about',
-  templateUrl: './about.component.html',
-  styleUrls: ['./about.component.css']
+  templateUrl: './about.component.html'
 })
 export class AboutComponent implements OnInit {
+  // Tecnologías
+  public technologies: Array<string>;
 
-  constructor() { }
+  /**
+   * Constructor
+   */
+  constructor(private technologiesService: TechnologiesService) { }
 
-  ngOnInit() {
+  /**
+   * OnInit
+   */
+  async ngOnInit() {
+    try {
+      this.technologies = await this.technologiesService.getTechnologies().toPromise();
+    } catch (ex) {
+      console.error(ex);
+    }
   }
-
 }

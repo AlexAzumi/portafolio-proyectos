@@ -13,23 +13,22 @@ Portafolio de proyectos web de mis **proyectos personales** importantes.
 
 ## Correr de manera local
 Para correr el proyecto de manera local necesitas seguir un par de pasos sencillos, pero para ello se necesita:
-- git
-- npm 6.4.1 o más nuevo
-- Angular CLI 7.1.4 o más nuevo
+- Git
+- NPM 6.4.1 o mejor
+- Angular CLI 7.1.4 o mejor
 
 Primero se necesita clonar el repositorio con el siguiente comando:
 ```
 git clone https://github.com/AlexAzumi/azumi-vault.git
 ```
-> Nota: Los siguientes comandos se tienen que realizar en la carpeta raíz del proyecto
+Luego accede a la carpeta donde se clonó el repositorio
+```
+cd azumi-vault
+```
 
-Una vez clonado el repositorio, se necesita descargar todas las dependenicas con **npm** usando el siguiente comando:
+Una vez en la carpeta raíz del repositorio, se necesitará descargar todas las dependenicas con `npm` usando el siguiente comando:
 ```
 npm install
-```
-Ahora es necesario compilar la hoja de estilos:
-```
-npm run sass
 ```
 Después de compilar los estilos estará listo para ejecutarse de manera local:
 ```
@@ -42,4 +41,4 @@ Si quiere compilar la versión de producción use el siguiente comando:
 ```
 npm run build
 ```
-> Nota: Este comando compila y minifica automáticamente la hoja de estilos
+Al terminar podrás encontrar todos los archivos de la página en la carpeta `dist`

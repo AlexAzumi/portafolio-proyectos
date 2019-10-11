@@ -1,5 +1,9 @@
+// Dependencias
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { CollapseModule } from 'ngx-bootstrap/collapse';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HttpClientModule } from '@angular/common/http';
+// Componentes
 import { NavbarComponent } from './navbar.component';
 
 describe('NavbarComponent', () => {
@@ -8,7 +12,14 @@ describe('NavbarComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NavbarComponent ]
+      imports: [
+        CollapseModule,
+        BrowserAnimationsModule,
+        HttpClientModule
+      ],
+      declarations: [
+        NavbarComponent
+      ]
     })
     .compileComponents();
   }));

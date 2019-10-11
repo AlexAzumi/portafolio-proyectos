@@ -1,6 +1,8 @@
+// Dependencias
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+// Componentes
 import { ContactComponent } from './contact.component';
+import { FooterComponent } from '../GLOBAL/footer/footer.component';
 
 describe('ContactComponent', () => {
   let component: ContactComponent;
@@ -8,7 +10,10 @@ describe('ContactComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ContactComponent ]
+      declarations: [
+        ContactComponent,
+        FooterComponent
+      ]
     })
     .compileComponents();
   }));

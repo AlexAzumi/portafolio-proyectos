@@ -23,4 +23,4 @@ script:
   - npm run test -- --no-watch --no-progress --browsers=ChromeHeadlessCI
 
 after_success:
-  - "curl -X POST -d {} https://api.netlify.com/build_hooks/${NETLIFY_KEY}?trigger_title=Travis+CI:+Success"
+  - "curl -X POST -d {} https://api.netlify.com/build_hooks/${NETLIFY_WEBHOOK_KEY}?trigger_title=Travis+CI:+Success"

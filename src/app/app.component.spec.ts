@@ -5,6 +5,7 @@ import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { PaginationModule } from 'ngx-bootstrap/pagination';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 // Pipes
 import { ReversePipe } from './pipes/reverse.pipe';
 // Componentes
@@ -25,7 +26,8 @@ describe('AppComponent', () => {
         CollapseModule,
         PaginationModule,
         HttpClientModule,
-        BrowserAnimationsModule
+        BrowserAnimationsModule,
+        FontAwesomeModule
       ],
       declarations: [
         AppComponent,

@@ -1,5 +1,6 @@
 // Dependencias
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 // Componentes
 import { ContactComponent } from './contact.component';
 import { FooterComponent } from '../GLOBAL/footer/footer.component';
@@ -10,6 +11,9 @@ describe('ContactComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [
+        FontAwesomeModule
+      ],
       declarations: [
         ContactComponent,
         FooterComponent

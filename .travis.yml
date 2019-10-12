@@ -16,9 +16,6 @@ cache:
   directories:
     - ./node_modules
 
-notifications:
-  slack: alexazumi:${SLACK_KEY}
-
 install:
   - npm install
 

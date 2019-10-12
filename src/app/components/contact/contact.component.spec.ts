@@ -31,4 +31,9 @@ describe('ContactComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it(`should have a h2 tag with 'Contacto'`, () => {
+    const compiled = fixture.debugElement.nativeNode;
+    expect(compiled.querySelector('h2').textContent).toBe('Contacto');
+  });
 });

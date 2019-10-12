@@ -1,6 +1,5 @@
 // Dependencias
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { Subscription } from 'rxjs';
 // Servicios
 import { ProjectsService } from 'src/app/services/projects/projects.service';
 // Modelos
@@ -12,11 +11,9 @@ declare var AOS: any;
   selector: 'app-projects',
   templateUrl: './projects.component.html'
 })
-export class ProjectsComponent implements OnInit, OnDestroy {
+export class ProjectsComponent implements OnInit {
   // Proyectos
   public projects: Project[];
-  // Observable
-  private request: Subscription;
 
   /*
    * Constructor
@@ -38,15 +35,4 @@ export class ProjectsComponent implements OnInit, OnDestroy {
       AOS.refresh();
     }, 1000);
   }
-
-  /*
-   * OnDestroy
-   */
-  ngOnDestroy() {
-    // Verificar si se logró la subscripción
-    if (this.request != null) {
-      this.request.unsubscribe();
-    }
-  }
-
 }

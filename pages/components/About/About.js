@@ -2,7 +2,7 @@ import React from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { Row, Col } from 'react-bootstrap';
 // Data
-import data from '../../data/about';
+import data from '../../../data/about';
 
 /**
  * About component

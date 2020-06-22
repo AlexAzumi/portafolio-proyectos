@@ -5,6 +5,7 @@
 /* Fonts */
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&family=Ubuntu:wght@500&display=swap');
+@import '../node_modules/rfs/scss.scss';
 
 /* Colors */
 
@@ -45,8 +46,13 @@ body {
  */
 
 .navbar {
+  transition: all 250ms;
+  &.bg-transparent {
+    background-color: transparent !important;
+  }
+
   /* Dark background */
-  &.bg-dark {
+  &.bg-dark:not(.bg-transparent) {
     background-color: $navbar-background !important;
   }
 
@@ -101,6 +107,17 @@ body {
 .home {
   margin-bottom: 12rem;
   margin-top: 12rem;
+
+  .name-title {
+    @include font-size(6rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    margin-bottom: 6rem;
+    margin-top: 6rem;
+  }
 }
 
 /* Animations */

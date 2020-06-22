@@ -17,9 +17,9 @@ const MainLayout = () => {
       {/* Main container */}
       <Container>
         {/* Home component */}
-        <Home id='home' />
+        <Home />
         {/* About component */}
-        <About id='about' />
+        <About />
       </Container>
     </>
   );

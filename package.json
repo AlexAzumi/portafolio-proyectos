@@ -10,6 +10,7 @@
     "deploy": "yarn build && yarn export"
   },
   "dependencies": {
+    "@n8tb1t/use-scroll-position": "^1.0.43",
     "animate.css": "^4.1.0",
     "bootstrap": "^4.5.0",
     "next": "9.4.4",
@@ -17,6 +18,7 @@
     "react-animate-on-scroll": "^2.1.5",
     "react-bootstrap": "^1.0.1",
     "react-dom": "16.13.1",
+    "rfs": "^9.0.3",
     "sass": "^1.26.8"
   },
   "engines": {

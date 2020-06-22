@@ -11,7 +11,7 @@ import data from '../../../data/about';
 const About = () => {
   return (
     <ScrollAnimation animateIn='animate__fadeInLeft' animateOnce={true}>
-      <div className='mb-5'>
+      <div id='about' className='mb-5'>
         <h2 className='text-center text-primary mb-4 title'>Sobre mí</h2>
         <Row>
           {/* Picture */}

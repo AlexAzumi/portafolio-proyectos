@@ -12,9 +12,9 @@ const Home = () => {
       animateOnce={true}
       delay={1200}
     >
-      <div className='home'>
+      <div id='home' className='home'>
         <h2 className='display-4 text-primary'>Hola, mi nombre es</h2>
-        <h1 className='display-2 text-light text font-weight-bold'>
+        <h1 className='display-2 text-light font-weight-bold name-title'>
           Alejandro Suárez
         </h1>
         <h5 className='text-info text-right'>

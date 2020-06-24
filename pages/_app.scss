@@ -101,6 +101,10 @@ body {
   }
 }
 
+.fade-in-left {
+  animation-name: fade-in-left;
+}
+
 /**
  * Home component styles
  */
@@ -130,6 +134,19 @@ body {
   100% {
     -webkit-transform: translateY(0);
     transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-left {
+  0% {
+    -webkit-transform: translateX(-30%);
+    transform: translateX(-30%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
     opacity: 1;
   }
 }

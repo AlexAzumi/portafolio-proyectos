@@ -4,7 +4,6 @@
 
 /* Fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&family=Ubuntu:wght@500&display=swap');
 @import '../node_modules/rfs/scss.scss';
 
 /* Colors */
@@ -121,6 +120,39 @@ body {
   .home {
     margin-bottom: 6rem;
     margin-top: 6rem;
+  }
+}
+
+/**
+ * Projects component
+ */
+.custom-card {
+  background-color: $navbar-background;
+  font-weight: 200;
+
+  .title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6em;
+  }
+
+  .description {
+    height: 40px;
+  }
+
+  .url {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media (min-width: 992px) {
+  .custom-card {
+    .url {
+      background-color: #212529;
+      bottom: 10px;
+      position: absolute;
+      right: 5px;
+    }
   }
 }
 

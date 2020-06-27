@@ -4,6 +4,7 @@ import { Container } from 'react-bootstrap';
 import Navbar from './Navbar/Navbar';
 import Home from '../components/Home/Home';
 import About from '../components/About/About';
+import Projects from '../components/Projects/Projects';
 
 /**
  * Main layout component
@@ -20,6 +21,8 @@ const MainLayout = () => {
         <Home />
         {/* About component */}
         <About />
+        {/* Personal projects components */}
+        <Projects />
       </Container>
     </>
   );

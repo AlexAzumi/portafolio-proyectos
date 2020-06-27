@@ -8,6 +8,7 @@ import { useScrollPosition } from '@n8tb1t/use-scroll-position';
 const CustomNavbar = () => {
   // State
   const [isSticky, setIsSticky] = React.useState(false);
+  const [collapsed, setCollapsed] = React.useState(true);
 
   /**
    * Go to element with smooth animation
@@ -21,7 +22,11 @@ const CustomNavbar = () => {
     const element = document.getElementById(id);
     // Check element
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      // Check collapse status
+      if (!collapsed) {
+        setCollapsed(true);
+      }
     }
   };
 
@@ -45,9 +50,13 @@ const CustomNavbar = () => {
       bg='dark'
       variant='dark'
       expand='md'
+      expanded={!collapsed}
     >
       <Navbar.Brand></Navbar.Brand>
-      <Navbar.Toggle aria-controls='basic-navbar-nav' />
+      <Navbar.Toggle
+        aria-controls='basic-navbar-nav'
+        onClick={() => setCollapsed(!collapsed)}
+      />
       <Navbar.Collapse>
         <Nav className='ml-auto'>
           <Nav.Link

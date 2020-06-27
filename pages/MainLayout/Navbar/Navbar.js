@@ -67,7 +67,7 @@ const CustomNavbar = () => {
           <Nav.Link
             className='rounded-pill px-3 mx-0 mx-md-1 fade-top-2 text-center mb-2 mb-md-0'
             href='#projects'
-            onClick={event => goToElement(event, 'project')}
+            onClick={event => goToElement(event, 'projects')}
           >
             Proyectos
           </Nav.Link>

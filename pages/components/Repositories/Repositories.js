@@ -20,7 +20,7 @@ const Repositories = () => {
   const [paginationSettings, setPaginationSettings] = React.useState({
     selectedPage: 0,
     start: 0,
-    end: 5,
+    end: 6,
   });
 
   /**
@@ -65,7 +65,7 @@ const Repositories = () => {
 
   return (
     <ScrollAnimation animateIn='fade-in-left' animateOnce={true}>
-      <div id='about' className='mb-5'>
+      <div id='repositories' className='mb-5'>
         <h2 className='text-center text-primary mb-4 title'>Repositorios</h2>
         <Row>
           {repos.length ? (
@@ -77,8 +77,20 @@ const Repositories = () => {
               )
               .map((item, index) => {
                 return (
-                  <Col lg={6} key={`repository-${index}`}>
-                    <p>{item.full_name}</p>
+                  <Col className='pb-2' lg={6} key={`repository-${index}`}>
+                    <div className='custom-card repository rounded'>
+                      <p className='name text-primary mb-0'>{item.name}</p>
+                      <p className='text-muted mb-0'>{item.full_name}</p>
+                      <a
+                        className='link text-info'
+                        href={item.html_url}
+                        target='_blank'
+                        rel='noopener noreferrer'
+                      >
+                        {item.html_url}
+                      </a>
+                      <p className='mb-0'>{item.description}</p>
+                    </div>
                   </Col>
                 );
               })
@@ -87,8 +99,8 @@ const Repositories = () => {
           )}
         </Row>
         {/* Pagination */}
-        <div className='d-flex justify-content-center'>
-          <Pagination>
+        <div className='d-flex justify-content-center mt-3'>
+          <Pagination className='custom-pagination'>
             {paginationPages.length
               ? paginationPages.map(item => {
                   return (

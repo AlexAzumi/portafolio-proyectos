@@ -4,7 +4,7 @@
 
 /* Fonts */
 
-@import '../node_modules/rfs/scss.scss';
+@import 'rfs/scss.scss';
 
 /* Colors */
 
@@ -108,8 +108,8 @@ body {
  * Home component styles
  */
 .home {
-  margin-bottom: 12rem;
-  margin-top: 12rem;
+  @include margin-bottom(12rem);
+  @include margin-top(12rem);
 
   .name-title {
     @include font-size(6rem);
@@ -142,6 +142,46 @@ body {
   .url {
     display: block;
     text-align: center;
+  }
+}
+
+/**
+ * Repositories component
+ */
+
+.custom-card {
+  height: 100%;
+
+  &.repository {
+    @include padding(1rem);
+  }
+
+  .name {
+    @include margin-bottom(0.5rem);
+    @include font-size(1.4rem);
+  }
+
+  .link:hover {
+    color: #17a2b8;
+  }
+}
+
+.custom-pagination {
+  .page-item {
+    .page-link {
+      @include padding-bottom(0.5rem);
+      @include padding-left(1rem);
+      @include padding-right(1rem);
+      @include padding-top(0.5rem);
+
+      color: #ffffff;
+      background-color: $navbar-background;
+      border: 0;
+    }
+
+    &.active .page-link {
+      background-color: #17a2b8;
+    }
   }
 }
 

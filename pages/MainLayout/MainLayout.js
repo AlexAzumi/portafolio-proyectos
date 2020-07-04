@@ -6,6 +6,7 @@ import Home from '../components/Home/Home';
 import About from '../components/About/About';
 import Projects from '../components/Projects/Projects';
 import Repositories from '../components/Repositories/Repositories';
+import Contact from '../components/Contact/Contact';
 
 /**
  * Main layout component
@@ -26,6 +27,8 @@ const MainLayout = () => {
         <Projects />
         {/* Personal GitHub projects */}
         <Repositories />
+        {/* Contact information */}
+        <Contact />
       </Container>
     </>
   );

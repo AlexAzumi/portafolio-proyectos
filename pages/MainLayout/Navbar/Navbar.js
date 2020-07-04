@@ -52,7 +52,6 @@ const CustomNavbar = () => {
       expand='md'
       expanded={!collapsed}
     >
-      <Navbar.Brand></Navbar.Brand>
       <Navbar.Toggle
         aria-controls='basic-navbar-nav'
         onClick={() => setCollapsed(!collapsed)}

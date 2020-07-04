@@ -18,7 +18,7 @@ const Repositories = () => {
   const [repos, setRepos] = React.useState([]);
   const [paginationPages, setPaginationPages] = React.useState([]);
   const [paginationSettings, setPaginationSettings] = React.useState({
-    selectedPage: 0,
+    selectedPage: 1,
     start: 0,
     end: 6,
   });

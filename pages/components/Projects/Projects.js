@@ -15,7 +15,7 @@ const Projects = () => {
         <h2 className='text-center text-primary mb-4 title'>Proyectos</h2>
         {/* Projects */}
         <Row>
-          {projects.map((item, index) => {
+          {projects.reverse().map((item, index) => {
             return (
               <Col key={`project-${index}`} lg={6} className='mb-3'>
                 <div className='custom-card rounded p-2 p-lg-3'>
@@ -27,12 +27,14 @@ const Projects = () => {
                     {/* Image */}
                     <img className='img-fluid mb-1' src={item.imageURL} />
                     {/* Link */}
-                    <a
-                      className='url text-info rounded-pill px-lg-3 py-lg-1'
-                      href={item.url}
-                    >
-                      {item.url}
-                    </a>
+                    {item.url ? (
+                      <a
+                        className='url text-info rounded-pill px-lg-3 py-lg-1'
+                        href={item.url}
+                      >
+                        {item.url}
+                      </a>
+                    ) : null}
                   </div>
                   {/* Description */}
                   <p className='description text-center'>{item.description}</p>

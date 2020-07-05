@@ -1,6 +1,15 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import { useScrollPosition } from '@n8tb1t/use-scroll-position';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// Icons
+import {
+  faHome,
+  faEnvelope,
+  faCodeBranch,
+  faProjectDiagram,
+  faAddressCard,
+} from '@fortawesome/free-solid-svg-icons';
 
 /**
  * Navbar component
@@ -53,6 +62,7 @@ const CustomNavbar = () => {
       expanded={!collapsed}
     >
       <Navbar.Toggle
+        className='ml-auto'
         aria-controls='basic-navbar-nav'
         onClick={() => setCollapsed(!collapsed)}
       />
@@ -63,6 +73,7 @@ const CustomNavbar = () => {
             href='#home'
             onClick={event => goToElement(event, 'home')}
           >
+            <FontAwesomeIcon className='mr-2' icon={faHome} />
             Inicio
           </Nav.Link>
           <Nav.Link
@@ -70,6 +81,7 @@ const CustomNavbar = () => {
             href='#about'
             onClick={event => goToElement(event, 'about')}
           >
+            <FontAwesomeIcon className='mr-2' icon={faAddressCard} />
             Sobre mí
           </Nav.Link>
           <Nav.Link
@@ -77,6 +89,7 @@ const CustomNavbar = () => {
             href='#projects'
             onClick={event => goToElement(event, 'projects')}
           >
+            <FontAwesomeIcon className='mr-2' icon={faProjectDiagram} />
             Proyectos
           </Nav.Link>
           <Nav.Link
@@ -84,6 +97,7 @@ const CustomNavbar = () => {
             href='#repositories'
             onClick={event => goToElement(event, 'repositories')}
           >
+            <FontAwesomeIcon className='mr-2' icon={faCodeBranch} />
             Repositorios
           </Nav.Link>
           <Nav.Link
@@ -91,6 +105,7 @@ const CustomNavbar = () => {
             href='#contact'
             onClick={event => goToElement(event, 'contact')}
           >
+            <FontAwesomeIcon className='mr-2' icon={faEnvelope} />
             Contacto
           </Nav.Link>
         </Nav>

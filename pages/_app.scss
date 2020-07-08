@@ -181,7 +181,7 @@ body {
     }
 
     &.active .page-link {
-      background-color: #17a2b8;
+      background-color: $primary;
     }
   }
 }
@@ -193,6 +193,70 @@ body {
       bottom: 10px;
       position: absolute;
       right: 5px;
+    }
+  }
+}
+
+/**
+ * Contact component
+ */
+
+#contact {
+  @include font-size(1.3rem);
+
+  .btn {
+    @include font-size(1.3rem);
+
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid $primary;
+    color: $primary;
+    display: flex;
+    justify-content: center;
+    transition: all 250ms;
+
+    &:hover {
+      color: #ffffff;
+      background-color: $primary;
+    }
+  }
+
+  .email-button {
+    border-bottom-right-radius: 0;
+    border-right: 0;
+    border-top-right-radius: 0;
+  }
+
+  .email-icon {
+    @include margin-right(0.8rem);
+  }
+
+  .email-container {
+    display: flex;
+    align-items: center;
+
+    .email {
+      align-items: center;
+      background-color: $primary;
+      border-bottom-right-radius: 0.25rem;
+      border-top-right-radius: 0.25rem;
+      color: initial;
+      display: flex;
+      flex-grow: 1;
+      height: 100%;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  #contact {
+    .email-container {
+      .email {
+        border-bottom-left-radius: 0.25rem;
+        border-top-left-radius: 0.25rem;
+      }
     }
   }
 }

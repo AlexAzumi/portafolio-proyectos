@@ -7,6 +7,7 @@ import About from '../components/About/About';
 import Projects from '../components/Projects/Projects';
 import Repositories from '../components/Repositories/Repositories';
 import Contact from '../components/Contact/Contact';
+import Copyright from '../components/Copyright/Copyright';
 
 /**
  * Main layout component
@@ -29,6 +30,8 @@ const MainLayout = () => {
         <Repositories />
         {/* Contact information */}
         <Contact />
+        {/* Copyright footer */}
+        <Copyright />
       </Container>
     </>
   );

@@ -10,7 +10,14 @@ export default [
     title: 'Healthy Catching',
     description: 'Juego educativo para dispositivos Android',
     imageURL: '/images/projects/healthycatching.jpg',
-    url: 'https://healthycatching.netlify.app/',
+    url: 'https://healthycatching.alejandrosuarez.tech/',
+  },
+  {
+    title: 'az! player',
+    description:
+      'Reproductor de música desarrollado con Electron para canciones del juego rítmico llamado osu!',
+    imageURL: '/images/projects/az-player.jpg',
+    url: 'https://az-player.alejandrosuarez.tech/',
   },
   {
     title: 'Amole - Tecnología y diseño',

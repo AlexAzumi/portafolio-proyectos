@@ -115,6 +115,16 @@ body {
   .name-title {
     @include font-size(6rem);
   }
+
+  .my-projects {
+    .down-icon {
+      transition: all 250ms;
+    }
+
+    &:hover > .down-icon {
+      transform: translateY(5px);
+    }
+  }
 }
 
 @media (max-width: 768px) {

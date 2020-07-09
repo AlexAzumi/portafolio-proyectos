@@ -22,10 +22,10 @@ const MainLayout = () => {
       <Container>
         {/* Home component */}
         <Home />
-        {/* About component */}
-        <About />
         {/* Personal projects components */}
         <Projects />
+        {/* About component */}
+        <About />
         {/* Personal GitHub projects */}
         <Repositories />
         {/* Contact information */}

@@ -77,20 +77,20 @@ const CustomNavbar = () => {
             Inicio
           </Nav.Link>
           <Nav.Link
-            className='rounded-pill px-3 mx-0 mx-md-1 fade-top-1 text-center mb-2 mb-md-0'
-            href='#about'
-            onClick={event => goToElement(event, 'about')}
-          >
-            <FontAwesomeIcon className='mr-2' icon={faAddressCard} />
-            Sobre mí
-          </Nav.Link>
-          <Nav.Link
             className='rounded-pill px-3 mx-0 mx-md-1 fade-top-2 text-center mb-2 mb-md-0'
             href='#projects'
             onClick={event => goToElement(event, 'projects')}
           >
             <FontAwesomeIcon className='mr-2' icon={faProjectDiagram} />
             Proyectos
+          </Nav.Link>
+          <Nav.Link
+            className='rounded-pill px-3 mx-0 mx-md-1 fade-top-1 text-center mb-2 mb-md-0'
+            href='#about'
+            onClick={event => goToElement(event, 'about')}
+          >
+            <FontAwesomeIcon className='mr-2' icon={faAddressCard} />
+            Sobre mí
           </Nav.Link>
           <Nav.Link
             className='rounded-pill px-3 mx-0 mx-md-1 fade-top-3 text-center mb-2 mb-md-0'

@@ -11,10 +11,12 @@ import data from '../../../data/about';
 const About = () => {
   return (
     <ScrollAnimation
+      className='position-relative'
       animateIn='fade-in-left'
       animateOnce={true}
       animatePreScroll={false}
     >
+      <div className='section-header' id='about' />
       <div id='about' className='mb-5'>
         <h2 className='text-center text-primary mb-4 title'>Sobre mí</h2>
         <Row>
@@ -30,11 +32,6 @@ const About = () => {
               estudio Ingeniería en Computación en el Centro Universitario de
               Ciencias Exactas e Ingenierías (CUCEI) de la{' '}
               <b>Universidad de Guadalajara</b>.
-            </p>
-            <p className='text-justify'>
-              Desde jóven me he interesado en la tecnología, empezando a
-              programar desde los 8 años pero no tomé seriamente esto hasta los
-              14.
             </p>
             <p className='text-justify'>
               Aquí hay un listado de las tecnologías y herramientas que he usado

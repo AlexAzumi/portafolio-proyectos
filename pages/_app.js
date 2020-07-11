@@ -3,7 +3,6 @@ import Head from 'next/head';
 // Components
 import MainLayout from './MainLayout/MainLayout';
 // Styles
-import 'bootstrap/dist/css/bootstrap.min.css';
 import 'animate.css/animate.min.css';
 import './_app.scss';
 

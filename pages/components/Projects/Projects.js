@@ -10,9 +10,18 @@ import projects from '../../../data/projects';
  */
 const Projects = () => {
   return (
-    <ScrollAnimation animateIn='fade-in-left' animateOnce={true}>
-      <div id='projects' className='pb-5'>
-        <h2 className='text-center text-primary mb-4 title'>Proyectos</h2>
+    <ScrollAnimation
+      className='position-relative'
+      animateIn='fade-in-left'
+      animateOnce={true}
+    >
+      <div className='section-header' id='projects' />
+      <div className='pb-5'>
+        <h2 className='text-center text-primary mb-1 title'>Proyectos</h2>
+        {/* Description */}
+        <p className='text-center mb-3'>
+          Proyectos más importantes en los que he trabajado
+        </p>
         {/* Projects */}
         <Row>
           {projects.reverse().map((item, index) => {

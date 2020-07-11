@@ -31,11 +31,13 @@ const Home = () => {
 
   return (
     <ScrollAnimation
+      className='position-relative'
       animateIn='animate__fadeInDown'
       animateOnce={true}
       delay={1200}
     >
-      <div id='home' className='home'>
+      <div className='section-header' id='home' />
+      <div className='home'>
         <h2 className='display-4 text-primary'>Hola, mi nombre es</h2>
         <h1 className='display-2 text-light font-weight-bold name-title'>
           Alejandro Suárez
@@ -46,13 +48,19 @@ const Home = () => {
         <div className='d-flex justify-content-center align-items-center mt-5'>
           <Button
             className='my-projects'
-            variant='primary'
+            variant='outline-primary'
             size='lg'
             onClick={event => goToElement(event, 'projects')}
           >
-            <FontAwesomeIcon className='down-icon mr-3' icon={faChevronDown} />
+            <FontAwesomeIcon
+              className='down-icon left mr-3'
+              icon={faChevronDown}
+            />
             Mis proyectos
-            <FontAwesomeIcon className='down-icon ml-3' icon={faChevronDown} />
+            <FontAwesomeIcon
+              className='down-icon right ml-3'
+              icon={faChevronDown}
+            />
           </Button>
         </div>
       </div>

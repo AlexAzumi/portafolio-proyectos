@@ -9,6 +9,7 @@ import {
   faCodeBranch,
   faProjectDiagram,
   faAddressCard,
+  faPollH,
 } from '@fortawesome/free-solid-svg-icons';
 
 /**
@@ -58,7 +59,7 @@ const CustomNavbar = () => {
       }`}
       bg='dark'
       variant='dark'
-      expand='md'
+      expand='lg'
       expanded={!collapsed}
     >
       <Navbar.Toggle
@@ -83,6 +84,14 @@ const CustomNavbar = () => {
           >
             <FontAwesomeIcon className='mr-2' icon={faProjectDiagram} />
             Proyectos
+          </Nav.Link>
+          <Nav.Link
+            className='rounded-pill px-3 mx-0 mx-md-1 fade-top-1 text-center mb-2 mb-md-0'
+            href='#projects'
+            onClick={event => goToElement(event, 'jobs')}
+          >
+            <FontAwesomeIcon className='mr-2' icon={faPollH} />
+            Experiencia
           </Nav.Link>
           <Nav.Link
             className='rounded-pill px-3 mx-0 mx-md-1 fade-top-2 text-center mb-2 mb-md-0'

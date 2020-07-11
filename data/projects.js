@@ -15,14 +15,14 @@ export default [
   {
     title: 'az! player',
     description:
-      'Reproductor de música desarrollado con Electron para canciones del juego rítmico llamado osu!',
+      'Reproductor de música desarrollado con Electron para escuchar las canciones del juego rítmico llamado osu!',
     imageURL: '/images/projects/az-player.jpg',
     url: 'https://az-player.alejandrosuarez.tech/',
   },
   {
     title: 'Amole - Tecnología y diseño',
     description:
-      'Landing page para el startup de tecnología, diseño y marketing. Amole Tech',
+      'Landing page del startup de tecnología, marketing y diseño, Amole Tech',
     imageURL: '/images/projects/amole.jpg',
     url: 'https://amoletech.com/',
   },

@@ -64,9 +64,19 @@ const Repositories = () => {
   }, []);
 
   return (
-    <ScrollAnimation animateIn='fade-in-left' animateOnce={true}>
+    <ScrollAnimation
+      className='position-relative'
+      animateIn='fade-in-left'
+      animateOnce={true}
+    >
+      <div className='section-header' id='repositories' />
       <div id='repositories' className='mb-5'>
-        <h2 className='text-center text-primary mb-4 title'>Repositorios</h2>
+        <h2 className='text-center text-primary mb-1 title'>Repositorios</h2>
+        {/* Description */}
+        <p className='text-center mb-3'>
+          Mis proyectos <span className='text-info'>open source</span>{' '}
+          disponibles en GitHub
+        </p>
         <Row>
           {repos.length ? (
             repos

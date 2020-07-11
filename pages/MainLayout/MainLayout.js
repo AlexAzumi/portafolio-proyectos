@@ -8,6 +8,7 @@ import Projects from '../components/Projects/Projects';
 import Repositories from '../components/Repositories/Repositories';
 import Contact from '../components/Contact/Contact';
 import Copyright from '../components/Copyright/Copyright';
+import Jobs from '../components/Jobs/Jobs';
 
 /**
  * Main layout component
@@ -24,6 +25,8 @@ const MainLayout = () => {
         <Home />
         {/* Personal projects components */}
         <Projects />
+        {/* Personal experience */}
+        <Jobs />
         {/* About component */}
         <About />
         {/* Personal GitHub projects */}

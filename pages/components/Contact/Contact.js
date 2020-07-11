@@ -1,6 +1,6 @@
 import React from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
-import { Row, Col, Button } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // Icons
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';

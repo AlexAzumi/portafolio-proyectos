@@ -86,7 +86,7 @@ const CustomNavbar = () => {
             Proyectos
           </Nav.Link>
           <Nav.Link
-            className='rounded-pill px-3 mx-0 mx-md-1 fade-top-1 text-center mb-2 mb-md-0'
+            className='rounded-pill px-3 mx-0 mx-md-1 fade-top-2 text-center mb-2 mb-md-0'
             href='#projects'
             onClick={event => goToElement(event, 'jobs')}
           >
@@ -94,7 +94,7 @@ const CustomNavbar = () => {
             Experiencia
           </Nav.Link>
           <Nav.Link
-            className='rounded-pill px-3 mx-0 mx-md-1 fade-top-2 text-center mb-2 mb-md-0'
+            className='rounded-pill px-3 mx-0 mx-md-1 fade-top-3 text-center mb-2 mb-md-0'
             href='#about'
             onClick={event => goToElement(event, 'about')}
           >
@@ -102,7 +102,7 @@ const CustomNavbar = () => {
             Sobre mí
           </Nav.Link>
           <Nav.Link
-            className='rounded-pill px-3 mx-0 mx-md-1 fade-top-3 text-center mb-2 mb-md-0'
+            className='rounded-pill px-3 mx-0 mx-md-1 fade-top-4 text-center mb-2 mb-md-0'
             href='#repositories'
             onClick={event => goToElement(event, 'repositories')}
           >
@@ -110,7 +110,7 @@ const CustomNavbar = () => {
             Repositorios
           </Nav.Link>
           <Nav.Link
-            className='rounded-pill px-3 mx-0 mx-md-1 fade-top-4 text-center mb-2 mb-md-0'
+            className='rounded-pill px-3 mx-0 mx-md-1 fade-top-5 text-center mb-2 mb-md-0'
             href='#contact'
             onClick={event => goToElement(event, 'contact')}
           >

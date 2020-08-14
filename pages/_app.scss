@@ -26,11 +26,11 @@ $navbar-font: 'Ubuntu', sans-serif;
 }
 
 body {
-  color: $white !important;
   background-attachment: fixed;
   background-color: #212529;
+  background-image: url('/images/bg.png');
   background-repeat: repeat;
-  background: url('/images/bg.png');
+  color: $white !important;
   min-height: 100%;
 }
 
@@ -173,16 +173,24 @@ body {
   }
 }
 
+@media (min-width: 992px) {
+  .custom-card {
+    .url {
+      background-color: #212529;
+      bottom: 10px;
+      position: absolute;
+      right: 5px;
+    }
+  }
+}
+
 /**
  * Repositories component
  */
 
-.custom-card {
+.repository-card {
+  @include padding(1rem);
   height: 100%;
-
-  &.repository {
-    @include padding(1rem);
-  }
 
   .name {
     @include margin-bottom(0.5rem);
@@ -209,17 +217,6 @@ body {
 
     &.active .page-link {
       background-color: $primary;
-    }
-  }
-}
-
-@media (min-width: 992px) {
-  .custom-card {
-    .url {
-      background-color: #212529;
-      bottom: 10px;
-      position: absolute;
-      right: 5px;
     }
   }
 }

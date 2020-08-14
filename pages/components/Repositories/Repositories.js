@@ -88,7 +88,7 @@ const Repositories = () => {
               .map((item, index) => {
                 return (
                   <Col className='pb-2' lg={6} key={`repository-${index}`}>
-                    <div className='custom-card repository rounded'>
+                    <div className='custom-card repository-card rounded'>
                       <p className='name text-primary mb-0'>{item.name}</p>
                       <p className='text-muted mb-0'>{item.full_name}</p>
                       <a

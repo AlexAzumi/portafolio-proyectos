@@ -1,16 +1,25 @@
 {
-  "short_name": "Alejandro Suárez",
-  "name": "Alejandro Suárez | Portafolio personal",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
-      "src": "/favicon.ico",
-      "type": "image/ico",
-      "sizes": "48x48"
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
   ],
-  "start_url": "/index.html",
-  "theme_color": "#303F9F",
-  "background_color": "#FFFFFF",
+  "start_url": ".",
   "display": "standalone",
-  "orientation": "portrait"
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
 }

@@ -1,0 +1,34 @@
+@import '~rfs/scss';
+
+/**
+ * General app styles
+ */
+
+// Colors
+$white: #ffffff;
+$dark: #1b1b1b;
+
+* {
+  font-family: 'Roboto Condensed';
+}
+
+/**
+ * Navbar component
+ */
+.navbar {
+  padding: 0 !important;
+
+  .nav-link {
+    @include font-size(1.2rem);
+    @include padding(1rem !important);
+    color: $white !important;
+    text-transform: uppercase;
+    transition: all 250ms;
+
+    &:hover {
+      transform: rotateZ(-8deg);
+    }
+  }
+}
+
+@import '~bootstrap/scss/bootstrap';

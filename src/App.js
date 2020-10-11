@@ -3,6 +3,8 @@ import React from 'react';
 import MainLayout from './views/MainLayout';
 // Styles
 import './App.scss';
+// Internacionalization
+import './i18n';
 
 const App = () => {
   return <MainLayout />;

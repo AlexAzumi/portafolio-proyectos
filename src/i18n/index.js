@@ -6,7 +6,9 @@ import en from './locals/en';
 
 // Instanciate i18n
 i18n.use(initReactI18next).init({
-  resources: { es, en },
-  lng: 'en',
+  resources: { es: { translation: { ...es } }, en: { translation: { ...en } } },
+  lng: 'es',
   fallbackLng: 'en',
 });
+
+export default i18n;

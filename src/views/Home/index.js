@@ -7,7 +7,11 @@ import React from 'react';
 const Home = () => {
   return (
     <div className='home'>
-      <p>Home</p>
+      <div className='inner-container'>
+        <h2 className='subtitle'>Hola, mi nombre</h2>
+        <h1 className='title'>Alejandro Suárez</h1>
+        <p className='degree'>Tecnólogo en desarrollo de software</p>
+      </div>
     </div>
   );
 };

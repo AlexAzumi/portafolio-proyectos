@@ -17,35 +17,127 @@ $primary: #f35938;
  * Navbar component
  */
 .navbar {
-  @include padding-top(0.5rem);
-  @include padding-bottom(0.5rem);
+  left: 0;
+  padding: 0 !important;
+  position: fixed !important;
+  right: 0;
+  top: 0;
+
+  @media (max-width: 767px) {
+    @include padding(1rem !important);
+  }
 
   .nav-link {
     @include font-size(1.2rem);
     @include padding(1rem !important);
+    animation-duration: 600ms;
+    animation-fill-mode: forwards;
+    animation-name: navbar-entry;
     color: $white !important;
     text-transform: uppercase;
+    transform: translateY(-5rem);
     transition: all 250ms ease-in-out;
-    transform: rotateZ(-4deg);
 
-    // Bottom line
-    hr {
-      border-width: 2px;
-      border-color: $dark;
-      margin: 0;
-      width: 0;
-      transition: all 250ms;
+    @media (max-width: 767px) {
+      animation-name: navbar-entry-mobile;
       opacity: 0;
     }
 
+    // Bottom line
+    hr {
+      border-color: $dark;
+      border-width: 2px;
+      margin: 0;
+      opacity: 0;
+      transition: all 250ms;
+      width: 0;
+    }
+
     &:hover {
-      color: $dark !important;
       background-color: $primary;
+      color: $dark !important;
 
       hr {
         opacity: 1;
         width: 100%;
       }
+    }
+
+    &.delay-0 {
+      animation-delay: 0;
+    }
+
+    &.delay-1 {
+      animation-delay: 200ms;
+    }
+
+    &.delay-2 {
+      animation-delay: 400ms;
+    }
+
+    &.delay-3 {
+      animation-delay: 600ms;
+    }
+
+    @keyframes navbar-entry {
+      0% {
+        opacity: 0;
+        transform: translateY(1rem) rotateZ(6deg);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) rotateZ(0);
+      }
+    }
+
+    @keyframes navbar-entry-mobile {
+      0% {
+        opacity: 0;
+        transform: translateX(2rem);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  }
+}
+
+/**
+ * Home view
+ */
+.home {
+  @include padding-bottom(5rem);
+  @include padding-left(3rem);
+  @include padding-right(3rem);
+  background-color: #7c7c7c;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: flex-end;
+  width: 100vw;
+
+  .inner-container {
+    margin-right: auto;
+
+    .subtitle {
+      @include font-size(5rem);
+      margin-bottom: 0;
+    }
+
+    .title {
+      @include font-size(7rem);
+      color: $primary;
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+
+    .degree {
+      @include font-size(1.5rem);
+      font-weight: 300;
+      margin-bottom: 0;
+      text-align: right;
     }
   }
 }

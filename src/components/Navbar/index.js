@@ -14,36 +14,67 @@ const Navbar = () => {
 
   /**
    * Goes to the selected element
+   * @param {Event} event - onClick event
    * @param {string} elementID - ID of the element that we are going to navigate
    */
-  const goToElement = (elementID) => {
+  const goToElement = (event, elementID) => {
+    event.preventDefault();
+
     const element = document.getElementById(elementID);
+
     if (element) {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
       // Collapse navbar
       setCollapsed(true);
+      // Update address bar
+      window.history.pushState('', "Azumi's vault", `/#${elementID}`);
     }
   };
 
   return (
     <BootstrapNavbar bg='dark' variant='dark' expand='md' expanded={!collapsed}>
-      <BootstrapNavbar.Brand>Azumi's vault</BootstrapNavbar.Brand>
+      <BootstrapNavbar.Brand className='brand'>
+        Azumi's vault
+      </BootstrapNavbar.Brand>
       <BootstrapNavbar.Toggle
         aria-controls='basic-navbar-nav'
         onClick={() => setCollapsed(!collapsed)}
       />
       <BootstrapNavbar.Collapse id='basic-navbar-nav'>
         <Nav className='mx-auto'>
-          <Nav.Link className='delay-0' onClick={() => goToElement('home')}>
+          <Nav.Link
+            href='#home'
+            className='delay-0'
+            onClick={(event) => goToElement(event, 'home')}
+          >
             {t('navbar.home')} <hr />
           </Nav.Link>
-          <Nav.Link className='delay-1' onClick={() => goToElement('projects')}>
+          <Nav.Link
+            href='#projects'
+            className='delay-1'
+            onClick={(event) => goToElement(event, 'projects')}
+          >
             {t('navbar.myProjects')} <hr />
           </Nav.Link>
-          <Nav.Link className='delay-2' onClick={() => goToElement('about')}>
+          <Nav.Link
+            href='#about'
+            className='delay-2'
+            onClick={(event) => goToElement(event, 'about')}
+          >
             {t('navbar.aboutMe')} <hr />
           </Nav.Link>
-          <Nav.Link className='delay-3' onClick={() => goToElement('contact')}>
+          <Nav.Link
+            href='#experience'
+            className='delay-3'
+            onClick={(event) => goToElement(event, 'experience')}
+          >
+            {t('navbar.experience')} <hr />
+          </Nav.Link>
+          <Nav.Link
+            href='#contact'
+            className='delay-4'
+            onClick={(event) => goToElement(event, 'contact')}
+          >
             {t('navbar.contact')} <hr />
           </Nav.Link>
         </Nav>

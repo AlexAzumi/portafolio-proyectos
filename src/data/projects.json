@@ -1,0 +1,17 @@
+[
+  {
+    "key": "medal-of-darkness",
+    "type": "projects.videogame",
+    "title": "projects.medalOfDarkness.title",
+    "description": "projects.medalOfDarkness.description",
+    "position": "right",
+    "theme": "brown",
+    "screenshots": [
+      {
+        "key": "mod-1",
+        "alt": "Captura del juego. Primer nivel",
+        "src": "assets/screenshots/test.jpg"
+      }
+    ]
+  }
+]

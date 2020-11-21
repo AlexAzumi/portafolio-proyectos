@@ -14,18 +14,49 @@ $primary: #f35938;
   font-family: 'Roboto Condensed';
 }
 
+.avoid-navbar {
+  position: relative;
+  top: -62px;
+
+  @media (max-width: 767px) {
+    top: -72px;
+  }
+}
+
+/**
+ * Floating button
+ */
+.floating-button {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+}
+
 /**
  * Navbar component
  */
 .navbar {
+  @include padding-left(1rem);
+  @include padding-right(1rem);
+
   left: 0;
-  padding: 0 !important;
+  padding-bottom: 0 !important;
+  padding-top: 0 !important;
   position: fixed !important;
   right: 0;
   top: 0;
 
   @media (max-width: 767px) {
     @include padding(1rem !important);
+  }
+
+  .brand {
+    position: absolute;
+    text-transform: uppercase;
+
+    @media (max-width: 767px) {
+      position: static;
+    }
   }
 
   .nav-link {
@@ -80,6 +111,10 @@ $primary: #f35938;
       animation-delay: 600ms;
     }
 
+    &.delay-4 {
+      animation-delay: 800ms;
+    }
+
     @keyframes navbar-entry {
       0% {
         opacity: 0;
@@ -118,7 +153,7 @@ $primary: #f35938;
   height: 100vh;
   justify-content: flex-end;
   overflow: hidden;
-  width: 100vw;
+  width: 100%;
 
   .inner-container {
     margin-right: auto;
@@ -140,6 +175,97 @@ $primary: #f35938;
       font-weight: 300;
       margin-bottom: 0;
       text-align: right;
+    }
+  }
+}
+
+/**
+ * Projects view
+ */
+.projects {
+  .project-card {
+    display: flex;
+    flex-direction: row;
+    min-height: 50vh;
+
+    .information,
+    .screenshots-container {
+      width: 50%;
+    }
+
+    .screenshots-container .screenshot {
+      display: flex;
+
+      img {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    .information {
+      @include padding(1rem);
+
+      .title,
+      .subtitle {
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+
+      .title {
+        font-size: 1.8em;
+        color: #9c9c9c;
+        margin-bottom: 0;
+      }
+
+      .subtitle {
+        font-size: 2.5em;
+      }
+
+      .description {
+        font-weight: lighter;
+        font-size: 1.3em;
+      }
+    }
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+
+      .screenshots-container,
+      .information {
+        width: 100%;
+      }
+    }
+
+    // Projects order
+    &[position='right'] {
+      .information {
+        order: 2;
+      }
+
+      .screenshots-container {
+        order: 1;
+      }
+    }
+
+    &[position='left'] {
+      .information {
+        order: 1;
+        text-align: right;
+      }
+
+      .screenshots-container {
+        order: 2;
+      }
+    }
+
+    // Projects color themes
+    &[theme='brown'] {
+      background-color: #1b1b1b;
+
+      .subtitle,
+      .description {
+        color: white;
+      }
     }
   }
 }

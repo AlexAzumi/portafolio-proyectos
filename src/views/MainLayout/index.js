@@ -1,8 +1,10 @@
 import React from 'react';
 // Components
 import Navbar from '../../components/Navbar';
+import ChangeLanguageButton from '../../components/ChangeLanguageButton';
 // Views
 import Home from '../Home';
+import MyProjects from '../MyProjects';
 
 /**
  * Component that wraps the entire app
@@ -14,6 +16,9 @@ const MainLayout = () => {
       <Navbar />
       {/* Views */}
       <Home />
+      <MyProjects />
+
+      <ChangeLanguageButton />
     </>
   );
 };

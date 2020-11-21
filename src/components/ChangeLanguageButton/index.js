@@ -19,7 +19,9 @@ const ChangeLanguageButton = () => {
 
   return (
     <div className='floating-button'>
-      <DropdownButton title={i18n.language.toUpperCase()}>
+      <DropdownButton
+        title={<label className='title'>{i18n.language.toUpperCase()}</label>}
+      >
         <Dropdown.Item onClick={() => handleChangeLanguage('es')}>
           ES | Español
         </Dropdown.Item>

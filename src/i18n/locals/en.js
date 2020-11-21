@@ -6,9 +6,13 @@ export default {
     experience: 'Experience',
     contact: 'Contact',
   },
+  home: {
+    title: 'Hello, my name is',
+    occupation: '- Software developer',
+  },
   projects: {
     videogame: 'Videogame',
-    medalOfDarness: {
+    medalOfDarkness: {
       title: 'Medal of Darkness',
       description: 'EMPTY',
     },

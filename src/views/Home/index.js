@@ -1,11 +1,14 @@
 import React from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
+import { useTranslation } from 'react-i18next';
 
 /**
  * Home view that will display my welcome message with a background video
  * @param {object} props - Component props
  */
 const Home = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <div id='home' className='avoid-navbar' />
@@ -17,7 +20,7 @@ const Home = () => {
             delay={800}
             offset={0}
           >
-            <h2 className='subtitle'>Hola, mi nombre</h2>
+            <h2 className='subtitle'>{t('home.title')}</h2>
           </ScrollAnimation>
           <ScrollAnimation
             animateIn='animate__rotateInUpRight'
@@ -33,7 +36,7 @@ const Home = () => {
             delay={1500}
             offset={0}
           >
-            <p className='degree'>Tecnólogo en desarrollo de software</p>
+            <p className='degree'>{t('home.occupation')}</p>
           </ScrollAnimation>
         </div>
       </div>

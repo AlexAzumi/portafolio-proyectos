@@ -6,6 +6,10 @@ export default {
     experience: 'Experiencia',
     contact: 'Contacto',
   },
+  home: {
+    title: 'Hola, mi nombre es',
+    occupation: '- Desarrollador de software',
+  },
   projects: {
     videogame: 'Videojuego',
     medalOfDarkness: {

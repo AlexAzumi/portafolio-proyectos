@@ -8,7 +8,7 @@ export default {
   },
   home: {
     title: 'Hola, mi nombre es',
-    occupation: '- Desarrollador de software',
+    occupation: 'Desarrollador de software',
   },
   projects: {
     videogame: 'Videojuego',

@@ -15,7 +15,27 @@
     "screenshots": [
       {
         "key": "mod-1",
-        "src": "assets/screenshots/test.jpg"
+        "src": "assets/screenshots/medal-of-darkness-1.jpg"
+      }
+    ]
+  },
+  {
+    "key": "healthy-catching",
+    "type": "projects.videogame",
+    "title": "projects.healthyCatching.title",
+    "description": "projects.healthyCatching.description",
+    "position": "left",
+    "entryAnimation": "project-entry-left",
+    "theme": "green",
+    "button": {
+      "text": "projects.healthyCatching.button",
+      "href": "https://healthycatching.alejandrosuarez.tech/",
+      "icon": "globe-americas"
+    },
+    "screenshots": [
+      {
+        "key": "hc-1",
+        "src": "assets/screenshots/healthy-catching-1.jpg"
       }
     ]
   },
@@ -24,7 +44,7 @@
     "type": "projects.desktopApp",
     "title": "projects.azPlayer.title",
     "description": "projects.azPlayer.description",
-    "position": "left",
+    "position": "right",
     "entryAnimation": "project-entry-right",
     "theme": "pink",
     "button": {
@@ -35,11 +55,11 @@
     "screenshots": [
       {
         "key": "ap-1",
-        "src": "assets/screenshots/az-player-screenshot-1.jpg"
+        "src": "assets/screenshots/az-player-1.jpg"
       },
       {
         "key": "ap-2",
-        "src": "assets/screenshots/az-player-screenshot-2.jpg"
+        "src": "assets/screenshots/az-player-2.jpg"
       }
     ]
   }

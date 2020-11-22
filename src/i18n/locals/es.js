@@ -22,7 +22,13 @@ export default {
     azPlayer: {
       title: 'az! player',
       description:
-        'Reproductor de música que toma todas las canciones del juego rítmico llamado osu! y las muestra de manera convencional para escucharlas como un reproductor convencional.\nEsta aplicación fue desarrollada con Electron, Vue.js y está disponible en dos idiomas: Español e inglés',
+        'Reproductor de música que toma todas las canciones del juego rítmico llamado "osu!" y las muestra de manera convencional para escucharlas como un reproductor convencional.\nEsta aplicación fue desarrollada con Electron, Vue.js y está disponible en dos idiomas: Español e Inglés',
+      button: 'Visita la página',
+    },
+    healthyCatching: {
+      title: 'Healthy Catching',
+      description:
+        'Videojuego educativo para dispositivos móviles.\nPresentado en la semana de la salud en el Centro Universitario de Tonalá para la campaña de concientización sobre los hábitos alimenticos de los jóvenes y adultos en México.',
       button: 'Visita la página',
     },
   },

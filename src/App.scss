@@ -273,9 +273,23 @@ $primary: #f35938;
       flex-direction: column;
       height: auto;
 
+      &[position='left'] {
+        .information {
+          order: 2 !important;
+        }
+
+        .screenshots-container {
+          order: 1 !important;
+        }
+      }
+
       .screenshots-container,
       .information {
         width: 100%;
+      }
+
+      .screenshots-container {
+        height: 200px;
       }
     }
 

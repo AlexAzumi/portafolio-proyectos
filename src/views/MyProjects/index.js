@@ -22,6 +22,7 @@ const MyProjects = () => {
         {projects.map((project) => {
           return (
             <ScrollAnimation
+              className='project-container'
               key={project.key}
               animateOnce={true}
               animateIn={project.entryAnimation}

@@ -206,6 +206,10 @@ $primary: #ff8f00;
 .projects {
   overflow: hidden;
 
+  .project-container:last-of-type .project-card {
+    margin-bottom: 0;
+  }
+
   .project-card {
     display: flex;
     flex-direction: row;

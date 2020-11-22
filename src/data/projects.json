@@ -25,7 +25,7 @@
     "title": "projects.healthyCatching.title",
     "description": "projects.healthyCatching.description",
     "position": "left",
-    "entryAnimation": "project-entry-left",
+    "entryAnimation": "project-entry-right",
     "theme": "green",
     "button": {
       "text": "projects.healthyCatching.button",
@@ -45,7 +45,7 @@
     "title": "projects.azPlayer.title",
     "description": "projects.azPlayer.description",
     "position": "right",
-    "entryAnimation": "project-entry-right",
+    "entryAnimation": "project-entry-left",
     "theme": "pink",
     "button": {
       "text": "projects.azPlayer.button",

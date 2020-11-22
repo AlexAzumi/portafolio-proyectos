@@ -15,11 +15,16 @@ export default {
     videogame: 'Videogame',
     medalOfDarkness: {
       title: 'Medal of Darkness',
-      description: 'EMPTY',
+      description: '',
       button: 'Download the game',
     },
     azPlayer: {
       title: 'az! player',
+      description: '',
+      button: 'Visit the landing page',
+    },
+    healthyCatching: {
+      title: 'Healthy Catching',
       description: '',
       button: 'Visit the landing page',
     },

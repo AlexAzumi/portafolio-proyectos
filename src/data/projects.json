@@ -5,12 +5,41 @@
     "title": "projects.medalOfDarkness.title",
     "description": "projects.medalOfDarkness.description",
     "position": "right",
+    "entryAnimation": "project-entry-left",
     "theme": "brown",
+    "button": {
+      "text": "projects.medalOfDarkness.button",
+      "href": "#",
+      "icon": "download"
+    },
     "screenshots": [
       {
         "key": "mod-1",
-        "alt": "Captura del juego. Primer nivel",
         "src": "assets/screenshots/test.jpg"
+      }
+    ]
+  },
+  {
+    "key": "az-player",
+    "type": "projects.desktopApp",
+    "title": "projects.azPlayer.title",
+    "description": "projects.azPlayer.description",
+    "position": "left",
+    "entryAnimation": "project-entry-right",
+    "theme": "pink",
+    "button": {
+      "text": "projects.azPlayer.button",
+      "href": "https://az-player.alejandrosuarez.tech",
+      "icon": "globe-americas"
+    },
+    "screenshots": [
+      {
+        "key": "ap-1",
+        "src": "assets/screenshots/az-player-screenshot-1.jpg"
+      },
+      {
+        "key": "ap-2",
+        "src": "assets/screenshots/az-player-screenshot-2.jpg"
       }
     ]
   }

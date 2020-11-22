@@ -11,10 +11,17 @@ export default {
     occupation: 'Software developer',
   },
   projects: {
+    desktopApp: 'Desktop app',
     videogame: 'Videogame',
     medalOfDarkness: {
       title: 'Medal of Darkness',
       description: 'EMPTY',
+      button: 'Download the game',
+    },
+    azPlayer: {
+      title: 'az! player',
+      description: '',
+      button: 'Visit the landing page',
     },
   },
 };

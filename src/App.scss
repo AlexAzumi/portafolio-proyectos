@@ -23,13 +23,23 @@ $primary: #f35938;
   }
 }
 
+.main-title {
+  @include padding(1rem);
+  @include font-size(3rem);
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 /**
  * Floating button
  */
 .floating-button {
-  position: fixed;
   bottom: 15px;
+  position: fixed;
   right: 15px;
+  z-index: 6;
 
   .title {
     font-size: 1.2em;
@@ -43,13 +53,13 @@ $primary: #f35938;
 .navbar {
   @include padding-left(1rem);
   @include padding-right(1rem);
-
   left: 0;
   padding-bottom: 0 !important;
   padding-top: 0 !important;
   position: fixed !important;
   right: 0;
   top: 0;
+  z-index: 5;
 
   @media (max-width: 767px) {
     @include padding(1rem !important);
@@ -188,27 +198,35 @@ $primary: #f35938;
  * Projects view
  */
 .projects {
+  overflow: hidden;
+
   .project-card {
     display: flex;
     flex-direction: row;
     min-height: 50vh;
+    margin-bottom: 10px;
 
-    .information,
     .screenshots-container {
-      width: 50%;
-    }
+      width: 40%;
 
-    .screenshots-container .screenshot {
-      display: flex;
+      .carousel-inner,
+      .screenshot {
+        height: 100%;
+      }
 
-      img {
-        margin-left: auto;
-        margin-right: auto;
+      .image {
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
       }
     }
 
     .information {
       @include padding(1rem);
+      display: flex;
+      flex-direction: column;
+      width: 60%;
 
       .title,
       .subtitle {
@@ -217,23 +235,43 @@ $primary: #f35938;
       }
 
       .title {
-        font-size: 1.8em;
+        @include font-size(1.8rem);
         color: #9c9c9c;
         margin-bottom: 0;
       }
 
       .subtitle {
-        font-size: 2.5em;
+        @include font-size(2.5rem);
       }
 
       .description {
+        @include font-size(1.3rem);
+        color: white;
         font-weight: lighter;
-        font-size: 1.3em;
+        line-height: 130%;
+        white-space: pre-wrap;
+      }
+
+      .extra-button {
+        @include font-size(1.3rem);
+        align-items: center;
+        align-self: flex-start;
+        border: 0;
+        display: flex;
+        margin-top: auto;
+        position: relative;
+        text-transform: uppercase;
+        transition: all 250ms;
+
+        .icon-button {
+          padding-right: 0.5rem;
+        }
       }
     }
 
     @media (max-width: 767px) {
       flex-direction: column;
+      height: auto;
 
       .screenshots-container,
       .information {
@@ -245,6 +283,10 @@ $primary: #f35938;
     &[position='right'] {
       .information {
         order: 2;
+
+        .extra-button {
+          align-self: flex-end;
+        }
       }
 
       .screenshots-container {
@@ -271,7 +313,61 @@ $primary: #f35938;
       .description {
         color: white;
       }
+
+      .extra-button {
+        color: #1b1b1b;
+        background-color: white;
+      }
     }
+
+    &[theme='pink'] {
+      background-color: #78002e;
+
+      .title {
+        color: #9b9b9b;
+      }
+
+      .subtitle {
+        color: white;
+      }
+
+      .extra-button {
+        color: #1b1b1b;
+        background-color: white;
+      }
+    }
+  }
+}
+
+.project-entry-left {
+  animation-name: project-entry-left;
+  animation-duration: 250ms;
+}
+
+.project-entry-right {
+  animation-name: project-entry-right;
+  animation-duration: 250ms;
+}
+
+@keyframes project-entry-left {
+  0% {
+    opacity: 0;
+    transform: translateX(-3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes project-entry-right {
+  0% {
+    opacity: 0;
+    transform: translateX(3rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 

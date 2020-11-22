@@ -5,6 +5,7 @@ import ChangeLanguageButton from '../../components/ChangeLanguageButton';
 // Views
 import Home from '../Home';
 import MyProjects from '../MyProjects';
+import About from '../About';
 
 /**
  * Component that wraps the entire app
@@ -17,6 +18,7 @@ const MainLayout = () => {
       {/* Views */}
       <Home />
       <MyProjects />
+      <About />
 
       <ChangeLanguageButton />
     </>

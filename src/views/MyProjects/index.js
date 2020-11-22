@@ -31,7 +31,7 @@ const MyProjects = () => {
                 theme={project.theme}
                 position={project.position}
               >
-                <Carousel className='screenshots-container'>
+                <Carousel className='screenshots-container' indicators={false}>
                   {project.screenshots.map((screenshot) => {
                     return (
                       <Carousel.Item

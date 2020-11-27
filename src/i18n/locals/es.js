@@ -8,7 +8,8 @@ export default {
   },
   home: {
     title: 'Hola, mi nombre es',
-    occupation: 'Desarrollador de software',
+    occupation:
+      'Desarrollador de software y estudiante de Ingeniería en Computación',
   },
   projects: {
     desktopApp: 'Aplicación de escritorio',
@@ -31,5 +32,10 @@ export default {
         'Videojuego educativo para dispositivos móviles.\nPresentado en la semana de la salud en el Centro Universitario de Tonalá para la campaña de concientización sobre los hábitos alimenticos de los jóvenes y adultos en México.',
       button: 'Visita la página',
     },
+  },
+  about: {
+    title: '¡Hola!',
+    description:
+      'Me llamo Alejandro Suárez, soy estudiante de Ingeniería en Computación y un programador amante de la tecnología cuya pasión nació editando páginas a los 7 años de edad.\n\nHe trabajado en una variedad de aplicaciones web con React.js, en especial CRMs y landing pages (o páginas de aterrizaje) para empresas. Poseo experiencia en desarrollo de videojuegos usando Unity, REST APIs creadas en Node.js y el desarrollo de aplicaciones móviles nativas usando React Native.\n\nManejo herramientas como Git, Netlify, Sendgrid y bases de datos como PosgreSQL, MySQL y MongoDB.',
   },
 };

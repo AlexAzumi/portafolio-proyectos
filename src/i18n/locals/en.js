@@ -29,4 +29,8 @@ export default {
       button: 'Visit the landing page',
     },
   },
+  about: {
+    title: 'Hello!',
+    description: `I'm an incomplete description`,
+  },
 };

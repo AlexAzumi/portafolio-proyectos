@@ -33,6 +33,20 @@ $primary: #ff8f00;
   text-transform: uppercase;
 }
 
+.dropdown-menu {
+  background-color: $dark !important;
+  border-radius: 0 !important;
+
+  .dropdown-item {
+    color: $white !important;
+    transition: all 150ms;
+
+    &:hover {
+      color: $dark !important;
+    }
+  }
+}
+
 /**
  * Floating button
  */

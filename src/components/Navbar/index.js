@@ -26,8 +26,6 @@ const Navbar = () => {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
       // Collapse navbar
       setCollapsed(true);
-      // Update address bar
-      window.history.pushState('', "Azumi's vault", `/#${elementID}`);
     }
   };
 

@@ -8,8 +8,7 @@ export default {
   },
   home: {
     title: 'Hola, mi nombre es',
-    occupation:
-      'Desarrollador de software y estudiante de Ingeniería en Computación',
+    occupation: 'Desarrollador de software',
   },
   projects: {
     desktopApp: 'Aplicación de escritorio',

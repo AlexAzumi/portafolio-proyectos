@@ -19,7 +19,7 @@ const Home = () => {
             <div
               className='wave waveTop'
               style={{
-                backgroundImage: `url('http://front-end-noobs.com/jecko/img/wave-top.png')`,
+                backgroundImage: `url('assets/wave-top.png')`,
               }}
             ></div>
           </div>
@@ -27,7 +27,7 @@ const Home = () => {
             <div
               className='wave waveMiddle'
               style={{
-                backgroundImage: `url('http://front-end-noobs.com/jecko/img/wave-mid.png')`,
+                backgroundImage: `url('assets/wave-mid.png')`,
               }}
             ></div>
           </div>
@@ -35,7 +35,7 @@ const Home = () => {
             <div
               className='wave waveBottom'
               style={{
-                backgroundImage: `url('http://front-end-noobs.com/jecko/img/wave-bot.png')`,
+                backgroundImage: `url('assets/wave-bot.png')`,
               }}
             ></div>
           </div>

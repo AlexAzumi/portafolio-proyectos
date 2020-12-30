@@ -35,6 +35,6 @@ export default {
   about: {
     title: '¡Hola!',
     description:
-      'Me llamo Alejandro Suárez, soy estudiante de Ingeniería en Computación y un programador amante de la tecnología cuya pasión nació editando páginas a los 7 años de edad.\n\nHe trabajado en una variedad de aplicaciones web con React.js, en especial CRMs y landing pages (o páginas de aterrizaje) para empresas. Poseo experiencia en desarrollo de videojuegos usando Unity, REST APIs creadas en Node.js y el desarrollo de aplicaciones móviles nativas usando React Native.\n\nManejo herramientas como Git, Netlify, Sendgrid y bases de datos como PosgreSQL, MySQL y MongoDB.',
+      'Me llamo Alejandro Suárez, soy estudiante de Ingeniería en Computación y un programador amante de la tecnología cuya pasión nació editando páginas a los 7 años de edad.\n\nHe trabajado en una variedad de aplicaciones web con React.js, en especial CRMs y landing pages (o páginas de aterrizaje) para empresas. Poseo experiencia en desarrollo de videojuegos usando Unity, REST APIs creadas en Node.js y el desarrollo de aplicaciones móviles nativas con React Native.\n\nManejo herramientas como Git, Netlify, Sendgrid y bases de datos como PosgreSQL, MySQL y MongoDB.',
   },
 };

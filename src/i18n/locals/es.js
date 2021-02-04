@@ -16,7 +16,7 @@ export default {
     medalOfDarkness: {
       title: 'Medal of Darkness',
       description:
-        'Mi proyecto de titulación del bachillerato tecnológico en el Centro de Enseñanza Técnica Industrial.\nEn Medal of Dakrness nos encontramos a Katherine, una chica que despertó en la mitad de un bosque y sin recuerdo alguno. Tu objetivo es guiarla a descubrir su pasado junto la compañía de Kalú, un pequeño fantasma simpático que te brindará ayuda con los puzles que se interpongan en el camino.',
+        'Mi proyecto de titulación del bachillerato tecnológico en el Centro de Enseñanza Técnica Industrial.\nEn Medal of Darkness nos encontramos a Katherine, una chica que despertó en la mitad de un bosque y sin recuerdo alguno. Tu objetivo es guiarla a descubrir su pasado junto la compañía de Kalú, un pequeño fantasma simpático que te brindará ayuda con los puzles que se interpongan en el camino.',
       button: 'Descarga el juego',
     },
     azPlayer: {

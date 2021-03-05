@@ -44,7 +44,7 @@ const Home = () => {
           <ScrollAnimation
             animateIn='animate__rotateInDownLeft'
             animateOnce={true}
-            delay={800}
+            delay={700}
             offset={0}
           >
             <h2 className='subtitle'>{t('home.title')}</h2>

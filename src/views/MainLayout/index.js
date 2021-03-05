@@ -6,6 +6,7 @@ import ChangeLanguageButton from '../../components/ChangeLanguageButton';
 import Home from '../Home';
 import MyProjects from '../MyProjects';
 import About from '../About';
+import Experience from '../Experience';
 
 /**
  * Component that wraps the entire app
@@ -19,6 +20,7 @@ const MainLayout = () => {
       <Home />
       <MyProjects />
       <About />
+      <Experience />
 
       <ChangeLanguageButton />
     </>

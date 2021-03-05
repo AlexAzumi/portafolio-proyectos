@@ -33,4 +33,25 @@ export default {
     title: 'Hello!',
     description: `I'm an incomplete description`,
   },
+  experience: {
+    goToWebsite: 'Go to website',
+    bixdy: {
+      name: 'Bixdy Corporation',
+      charge: 'Front-end & Back-end developer',
+      dates: 'November 2019 - Present',
+      description: 'Description',
+    },
+    tsmart: {
+      name: 'T • Smärt',
+      charge: 'Front-end developer',
+      dates: 'July 2020 - Present',
+      description: 'Description',
+    },
+    amole: {
+      name: 'AMOLE | Tecnology and design',
+      charge: 'Front-end & Back-end developer',
+      dates: 'June 2020 - Present',
+      description: 'Description',
+    },
+  },
 };
